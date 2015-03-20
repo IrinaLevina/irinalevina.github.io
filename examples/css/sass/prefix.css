@@ -1,0 +1,4 @@
+.block {
+  -moz-box-radius: 5px;
+  -webkit-box-radius: 5px;
+  box-radius: 5px; }

@@ -9,13 +9,13 @@
 </head>
 <body class="list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>CSS-preprocessors</h1>
+		<a>Web department - LeverX</a>
 	</header>
 	<section class="slide cover" id="Cover"><div>
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="">
+		<h2>CSS-препроцессоры</h2>
+		<p>Подготовлено для LeverX<a></a></p>
+		<img src="pictures/index_back.jpeg"  style="width:100%;" alt="">
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
@@ -40,45 +40,67 @@
 		</style>
 	</div></section>
 	<section class="slide"><div>
-		<h2>Shower Key Features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>All modern browsers are supported</li>
-			<li>Slide themes are separated from engine</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<h2>Что такое css-препроцессор?</h2>
+		<br>
+		<img src="pictures/css-prep.jpg" class="preproc-description">
+		<style type="text/css">
+			.preproc-description { width: 100%; margin-top: -30px; }
+		</style>
 	</div></section>
 	<section class="slide"><div>
-		<h2>Plain Text on Your Slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+		<h2>Что такое css-препроцессор?</h2>
+		<p>Препроцессоры компилируют код, который 
+			мы пишем на процессорном языке в чистый CSS код.</p>
+			<img src="pictures/preproc.jpg" class="preproc-description">
+		<style type="text/css">
+			.preproc-description { width: 100%; margin-top: -30px; }
+		</style>
 	</div></section>
 	<section class="slide"><div>
-		<h2>All Kind of Lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
+		<h2>Зачем это вообще нужно?</h2>
+		<br>
+		<div class="codeall-img-wrapper">
+			<img class="cod-all-img next" src="pictures/codeall.jpg">
+		</div>
+		<style type="text/css">
+			.cod-all-img {
+			  width: 450px;
+			}
+			.codeall-img-wrapper {
+				width: 100%;
+				text-align: center;
+			}
+		</style>
 	</div></section>
 	<section class="slide"><div>
-		<h2>Serious Citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
+		<h2>Зачем это вообще нужно?</h2>
+		<ul>
+			<li class="next">Что бы повторяться</li>
+			<li class="next">Что бы не повторться</li>
+			<li class="next">Конкатенация файлов</li>
+			<li class="next">Верстка становится логичнее</li>
+			<li class="next">Красивый и понятный код</li>
+			<li class="next"><strong>Меньше затрат</strong></li>
+		</ul>
 	</div></section>
+	
 	<section class="slide"><div>
+		<h2>Препроцессоры</h2>
+		<div class="logos-list">
+			<img src="pictures/less.png" class="less-logo">
+			<img src="pictures/sass.png" class="sass-logo">
+			<img src="pictures/stylus-logo.png" class="stylus-logo">
+			<img src="pictures/myth.jpg" class="myth-logo">
+			<img src="pictures/crush.svg" class="crush-logo">
+			<img src="pictures/rework.png" class="rework-logo">
+		</div>
+		<style type="text/css">
+			.logos-list img {
+		    	width: 200px; padding: 10px 27px;
+			}
+		</style>
+	</div></section>
+	<!-- <section class="slide"><div>
 		<h2>Code Samples</h2>
 		<pre>
 			<code>&lt;!DOCTYPE html&gt;</code>
@@ -89,81 +111,117 @@
 			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
 			<code><mark>&lt;/head&gt;</mark></code>
 		</pre>
+	</div></section> -->
+	<section class="slide"><div>
+		<h2>Основные возможности</h2>
+		<ul>
+			<li class="next">Раскрытие импортов</li>
+			<li class="next">Переменные</li>
+			<li class="next">Вычисления</li>
+			<li class="next">Условия, циклы и всё такое</li>
+			<li class="next">Миксины</li>
+			<li class="next">Работа с цветом</li>
+			<li class="next">Вложенные селекторы</li>
+		</ul>
 	</div></section>
 	<section class="slide"><div>
-		<h2>Even Tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
+		<h2>Скорость</h2>
+		<img src="pictures/speed.png" class="next">
 	</div></section>
-	<section class="slide cover" id="Picture"><div>
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="">
+	<!-- <section class="slide"><div>
+		<h2>Отличия и грабли</h2>
+		<img src="pictures/diff/grabli.png" class="next">
+	</div></section>
+	<section class="slide"><div>
+		<h2>Отличия и грабли</h2>
+		<p style="margin: 0 0 -15px;">Mixins</p>
+		<img src="pictures/diff/mix.png" class="next">
+	</div></section>
+	<section class="slide"><div>
+		<h2>Отличия и грабли</h2>
+		<p style="margin: 0 0 -15px;">Склеивания Less и Stylus</p>
+		<img src="pictures/diff/concat.png" class="next">
+	</div></section>
+	<section class="slide"><div>
+		<h2>Отличия и грабли</h2>
+		<p style="margin: 0 0 -15px;">Склеивания Sass =(</p>
+		<img src="pictures/diff/concat-bad.png" class="next">
+	</div></section> -->
+	<!-- <section class="slide"><div>
+		<h2>Переменные</h2>
+		<ul class="variables-sample">
+			<li class="less-variable">
+				<img src="pictures/variables/less.png">
+				<p class="variable-title">Less</p>
+			</li>
+			<li class="sass-variable">
+				<img src="pictures/variables/sass.png">
+				<p class="variable-title">Sass</p>
+			</li>
+			<li class="stylus-variable">
+				<img src="pictures/variables/stylus.png">
+				<p class="variable-title">Stylus</p>
+			</li>
+		</ul>
 		<style>
-			#Picture h2 {
-				color:#FFF;
-				}
+			ul.variables-sample li {
+			    list-style: none;
+			    float: left;
+			    display: block;
+			    width: 50%;
+			}
+
+			p.variable-title {
+			    width: 100%;
+			    text-align: center;
+			}
+
+			ul.variables-sample li:before {
+			    content: '';
+			}
+			ul.variables-sample li img {
+			  width: 267px;
+			}
 		</style>
 	</div></section>
-	<section class="slide shout"><div>
-		<h2>You can even shout this way</h2>
+	<section class="slide"><div>
+		<h2>Вычисления</h2>
+		<div class="math-wrapper">
+			<img src="pictures/math.jpg" class="math">
+			<img src="pictures/tomath.jpg" class="tomath">
+		</div>
 	</div></section>
 	<section class="slide"><div>
-		<h2>Inner Navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<h2>Циклы</h2>
+		<div class="loop-wrapper">
+			<img src="pictures/loops.jpg" class="loops">
+		</div>
 	</div></section>
+	<section class="slide"><div>
+		<h2>Циклы</h2>
+		<div class="loop-wrapper">
+			<img src="pictures/loop-sass-result.jpg" class="loops">
+		</div>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Циклы</h2>
+		<div class="loop-wrapper">
+			<img src="pictures/stylus-loop.png" class="loops">
+		</div>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Циклы</h2>
+		<div class="loop-wrapper">
+			<img src="pictures/loop-result.png" style="width: 100%;" class="loops">
+		</div>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Циклы</h2>
+		<p>if, while, each...</p>
+	</div></section--> 
 	<section class="slide shout" id="SeeMore"><div>
-		<h2><img src="pictures/logo.svg" alt=""> <a href="https://github.com/shower/shower">See more on GitHub</a></h2>
-		<style>
-			#Picture h2 {
-				color:#FFF;
-				}
-			#SeeMore h2 {
-				font-size:100px
-				}
-			#SeeMore img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
+		<h2>It's time for future</h2>
 	</div></section>
-	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
