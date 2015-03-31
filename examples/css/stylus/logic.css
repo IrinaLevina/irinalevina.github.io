@@ -1,9 +1,9 @@
 body foo {
-  border-radius: numpx;
+  border-radius: 1;
 }
 body foo {
-  border-radius: numpx;
+  border-radius: 2;
 }
 body foo {
-  border-radius: numpx;
+  border-radius: 3;
 }
