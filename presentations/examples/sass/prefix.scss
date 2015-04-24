@@ -1,0 +1,9 @@
+@mixin box-radius($radius) {
+  -moz-box-radius: $radius;
+  -webkit-box-radius: $radius;
+  box-radius: $radius;
+}
+
+.block {
+  @include box-radius(5px);
+}

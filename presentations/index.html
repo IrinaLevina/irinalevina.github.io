@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>CSS-preprocessors</h1>
+		<a>Web department - LeverX</a>
+	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>CSS-препроцессоры</h2>
+		<p>Подготовлено для LeverX<a></a></p>
+		<img src="pictures/index_back.jpeg"  style="width:100%;" alt="">
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		<style>
+			#Cover h2 {
+				margin:30px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+				}
+			#Cover p {
+				margin:10px 0 0;
+				text-align:center;
+				color:#FFF;
+				font-style:italic;
+				font-size:20px;
+				}
+				#Cover p a {
+					color:#FFF;
+					}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Что такое css-препроцессор?</h2>
+		<br>
+		<img src="pictures/css-prep.jpg" class="preproc-description">
+		<style type="text/css">
+			.preproc-description { width: 100%; margin-top: -30px; }
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Что такое css-препроцессор?</h2>
+		<p>Препроцессоры компилируют код, который 
+			мы пишем на процессорном языке в чистый CSS код.</p>
+			<img src="pictures/preproc.jpg" class="preproc-description">
+		<style type="text/css">
+			.preproc-description { width: 100%; margin-top: -30px; }
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Зачем это вообще нужно?</h2>
+		<br>
+		<div class="codeall-img-wrapper">
+			<img class="cod-all-img next" src="pictures/codeall.jpg">
+		</div>
+		<style type="text/css">
+			.cod-all-img {
+			  width: 450px;
+			}
+			.codeall-img-wrapper {
+				width: 100%;
+				text-align: center;
+			}
+		</style>
+	</div></section>
+		<section class="slide"><div>
+		<h2>Зачем это вообще нужно?</h2>
+		<p>СSS обладает ограниченными возможностями и не всегда позволяет сделать все, что хотелось. Это раздражает, правда?</p>
+		<div class="codeall-img-wrapper">
+			<img class="cod-all-img next" src="pictures/bad.gif">
+		</div>
+		<style type="text/css">
+			.cod-all-img {
+			  width: 450px;
+			}
+			.codeall-img-wrapper {
+				width: 100%;
+				text-align: center;
+			}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Зачем это вообще нужно?</h2>
+		<ul>
+			<li class="next">Что бы повторяться</li>
+			<li class="next">Что бы не повторться</li>
+			<li class="next">Конкатенация файлов</li>
+			<li class="next">Верстка становится логичнее</li>
+			<li class="next">Красивый и понятный код</li>
+			<li class="next"><strong>Меньше затрат</strong></li>
+		</ul>
+	</div></section>
+	
+	<section class="slide"><div>
+		<h2>Препроцессоры</h2>
+		<div class="logos-list">
+			<img src="pictures/less.png" class="less-logo">
+			<img src="pictures/sass.png" class="sass-logo">
+			<img src="pictures/stylus-logo.png" class="stylus-logo">
+			<img src="pictures/myth.jpg" class="myth-logo">
+			<img src="pictures/crush.svg" class="crush-logo">
+			<img src="pictures/rework.png" class="rework-logo">
+		</div>
+		<style type="text/css">
+			.logos-list img {
+		    	width: 200px; padding: 10px 27px;
+			}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Основные возможности</h2>
+		<ul>
+			<li class="next">Раскрытие импортов</li>
+			<li class="next">Переменные</li>
+			<li class="next">Вычисления</li>
+			<li class="next">Условия, циклы и всё такое</li>
+			<li class="next">Миксины</li>
+			<li class="next">Работа с цветом</li>
+			<li class="next">Вложенные селекторы</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Время демо</h2>
+		<img src="pictures/work.gif">
+	</div></section>
+	<section class="slide"><div>
+		<h2>Проблемы перпроцессоров</h2>
+		<ul>
+			<li class="next">Их нужно учить всем</li>
+			<li class="next">Дополнительное ПО</li>
+			<li class="next">Дополнительный этап разработки</li>
+			<li class="next">Браузер нас не понимает</li>
+			<li class="next">Используется малая часть возможностей</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Почему их не стоит использовать</h2>
+		<ul>
+			<li class="next">Я боюсь командной строки!</li>
+			<li class="next">Я не хочу менять свой подход к написанию CSS!</li>
+			<li class="next">Я не хочу, чтобы Sass влиял на то, как я прописываю стили!</li>
+			<li class="next">но тут проблема скорее всего не в препроцессорах...</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Css модели</h2>
+		<p>Нам надо больше думать об архитектуре</p>
+		<ul>
+			<li class="next">БЭМ</li>
+			<li class="next">SMACSS</li>
+			<li class="next">OOCSS</li>
+			<li class="next">Органический CSS</li>
+			<li class="next">Многослойный CSS</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Инструменты и библиотеки</h2>
+		<ul>
+			<li class="next">Stylus - nib</li>
+			<li class="next">Sass - compass, susy</li>
+			<li class="next">Less - less hut</li>
+			<li class="next">и многие другие...</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Скорость</h2>
+		<img src="pictures/speed.png" class="next">
+	</div></section>
+	<!-- <section class="slide"><div>
+		<h2>Отличия и грабли</h2>
+		<img src="pictures/diff/grabli.png" class="next">
+	</div></section>
+	<section class="slide"><div>
+		<h2>Отличия и грабли</h2>
+		<p style="margin: 0 0 -15px;">Mixins</p>
+		<img src="pictures/diff/mix.png" class="next">
+	</div></section>
+	<section class="slide"><div>
+		<h2>Отличия и грабли</h2>
+		<p style="margin: 0 0 -15px;">Склеивания Less и Stylus</p>
+		<img src="pictures/diff/concat.png" class="next">
+	</div></section>
+	<section class="slide"><div>
+		<h2>Отличия и грабли</h2>
+		<p style="margin: 0 0 -15px;">Склеивания Sass =(</p>
+		<img src="pictures/diff/concat-bad.png" class="next">
+	</div></section> -->
+	<!-- <section class="slide"><div>
+		<h2>Переменные</h2>
+		<ul class="variables-sample">
+			<li class="less-variable">
+				<img src="pictures/variables/less.png">
+				<p class="variable-title">Less</p>
+			</li>
+			<li class="sass-variable">
+				<img src="pictures/variables/sass.png">
+				<p class="variable-title">Sass</p>
+			</li>
+			<li class="stylus-variable">
+				<img src="pictures/variables/stylus.png">
+				<p class="variable-title">Stylus</p>
+			</li>
+		</ul>
+		<style>
+			ul.variables-sample li {
+			    list-style: none;
+			    float: left;
+			    display: block;
+			    width: 50%;
+			}
+
+			p.variable-title {
+			    width: 100%;
+			    text-align: center;
+			}
+
+			ul.variables-sample li:before {
+			    content: '';
+			}
+			ul.variables-sample li img {
+			  width: 267px;
+			}
+		</style>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Вычисления</h2>
+		<div class="math-wrapper">
+			<img src="pictures/math.jpg" class="math">
+			<img src="pictures/tomath.jpg" class="tomath">
+		</div>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Циклы</h2>
+		<div class="loop-wrapper">
+			<img src="pictures/loops.jpg" class="loops">
+		</div>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Циклы</h2>
+		<div class="loop-wrapper">
+			<img src="pictures/loop-sass-result.jpg" class="loops">
+		</div>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Циклы</h2>
+		<div class="loop-wrapper">
+			<img src="pictures/stylus-loop.png" class="loops">
+		</div>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Циклы</h2>
+		<div class="loop-wrapper">
+			<img src="pictures/loop-result.png" style="width: 100%;" class="loops">
+		</div>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Циклы</h2>
+		<p>if, while, each...</p>
+	</div></section--> 
+	<section class="slide shout" id="SeeMore"><div>
+		<h2>It's time for future</h2>
+		<img src="pictures/future.gif" class="next" style="width: 300px; position: absolute; bottom: 50px; left: 33%;">
+	</div></section>
+	<section class="slide shout" id="SeeMore2"><div>
+		<h2>It's time for future</h2>
+		
+	</div></section>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>

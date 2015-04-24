@@ -1,0 +1,13 @@
+.link-button {
+  height: 50px;
+  color: #345434;
+  background-color: #efefef;
+  border: 1px solid #efefef;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #bcbcbc;
+  padding: 0 25px;
+  cursor: pointer;
+}
+.link-button:hover {
+  background: #d6d6d6;
+}
