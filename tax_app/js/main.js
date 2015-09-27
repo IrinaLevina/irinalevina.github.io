@@ -34,13 +34,15 @@ var addMainPageEvents = function () {
 	});
 
 	$(window).on("scroll", function () {
-		var $mainBlock = $('.top-info-section');
-		if (!$mainBlock.isOnScreen()) {
-			$('.select-section').addClass('fixed-section');
-			$mainBlock.addClass('fixed-menu-under-block');
-		} else {
-			$('.select-section').removeClass('fixed-section');
-			$mainBlock.removeClass('fixed-menu-under-block');
+		if ($('body').width() > 600 ){
+			var $mainBlock = $('.top-info-section');
+			if (!$mainBlock.isOnScreen()) {
+				$('.select-section').addClass('fixed-section');
+				$mainBlock.addClass('fixed-menu-under-block');
+			} else {
+				$('.select-section').removeClass('fixed-section');
+				$mainBlock.removeClass('fixed-menu-under-block');
+			}
 		}
 	});
 }
