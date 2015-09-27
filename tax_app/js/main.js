@@ -18,7 +18,7 @@ $(document).ready(function(){
 		displace: false
 	});
 
-	$(window).touchwipe({
+	/*$(window).touchwipe({
 		wipeLeft: function() {
 			// Close
 			$.sidr('close', 'sidr');
@@ -30,7 +30,7 @@ $(document).ready(function(){
 		},
 		preventDefaultEvents: false
 	});
-
+*/
 	addMainPageEvents();
 	addInfoPageEvents();
 });
