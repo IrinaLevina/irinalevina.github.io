@@ -21,12 +21,12 @@ $(document).ready(function(){
 	$(window).touchwipe({
 		wipeLeft: function() {
 			// Close
-			$.sidr('open', 'sidr-main');
+			$.sidr('open', 'sidr');
 			console.log('close')
 		},
 		wipeRight: function() {
 			// Open
-			$.sidr('close', 'sidr-main');
+			$.sidr('close', 'sidr');
 		},
 		preventDefaultEvents: false
 	});
