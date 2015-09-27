@@ -928,13 +928,13 @@ p.service-mobile-title {
                         .rating {}
                         .services {padding: 0 0 4px 2px;}
                             .service-item {margin: 0 4px 0 0; display: inline-block; vertical-align: middle;}
-                            a.button-more, a.button-show_more {width: 180px; line-height: 35px; text-align: center; background: transparent; border: 1px solid #c6c6c6; color: #b2b2b2; font-size: 14px; display: inline-block; text-transform: uppercase; font-weight: 600;
+                            .button-more, .button-show_more {width: 180px; line-height: 35px; text-align: center; background: transparent; border: 1px solid #c6c6c6; color: #b2b2b2!important; font-size: 14px; display: inline-block; text-transform: uppercase; font-weight: 600;
                                 -webkit-transition: all .2s;
                                 -moz-transition: all .2s;
                                 -ms-transition: all .2s;
                                 -o-transition: all .2s;
                                 transition: all .2s;}
-                            .button-more:hover, .button-show_more:hover, .button-mobile {background: #3399cc; border-color: #3399cc; color: #fff;}
+                            .button-more:hover, .button-show_more:hover, .button-mobile {background: #3399cc; border-color: #3399cc; color: #fff!important;}
                         .item-reviews {margin: 9px 0 0; float: right;}
                             .reviews {position: relative; display: inline-block; border-bottom: 1px dotted #3399cc; color: #3399cc; font-size: 16px;}
                             .reviews-num {width: 16px; line-height: 16px; font-size: 10px; color: #000; background: #ffd800; top: -8px; right: -12px; text-align: center; position: absolute; -webkit-border-radius: 50%; border-radius: 50%;}
@@ -999,6 +999,14 @@ p.service-mobile-title {
 
     /*common styles*/
 .mobile-visible {display: none;}
-.mobile-menu-wrapper {
-    top: 45px!important;
+a#mobile-bottom-menu-link-internal {
+    bottom: 25px;
+    position: absolute;
+    left: 20px;
+}
+
+a#mobile-top-menu-link-internal {
+    text-align: left;
+    display: block;
+    padding: 20px;
 }

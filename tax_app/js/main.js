@@ -9,16 +9,24 @@ $(document).ready(function(){
 		side: 'left',
 		displace: false
 	});
+	$('#mobile-top-menu-link-internal').sidr({
+		side: 'left',
+		displace: false
+	});
+	$('#mobile-bottom-menu-link-internal').sidr({
+		side: 'left',
+		displace: false
+	});
 
 	$(window).touchwipe({
 		wipeLeft: function() {
 			// Close
-			$.sidr('close', 'sidr-main');
+			$.sidr('open', 'sidr-main');
 			console.log('close')
 		},
 		wipeRight: function() {
 			// Open
-			$.sidr('open', 'sidr-main');
+			$.sidr('close', 'sidr-main');
 		},
 		preventDefaultEvents: false
 	});
