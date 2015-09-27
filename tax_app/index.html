@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Все такси Минска - taxiinfo.by</title>
+        <meta name="description" content="">
+		<meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/select2.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="css/jquery.sidr.light.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    </head>
+    <body>
+	<header class="page-header">
+		<div class="content-center clearfix">
+            <div class="menu-mobile mobile-visible">
+                <a class="menu-mobile-icon" href="#sidr" id="mobile-top-menu-link"><img src="img/menu-mobile-icon.png" /></a>
+				<div class="mobile-menu-wrapper" id="sidr">
+					<ul class="menu">
+						<li class="menu-item"><a class="_active" href="#">О ПРОЕКТЕ</a></li>
+						<li class="menu-item"><a href="#">РЕКЛАМОДАТЕЛЯМ</a></li>
+						<li class="menu-item"><a href="#">СОВЕТЫ</a></li>
+						<li class="menu-item"><a href="#">КОНТАКТЫ</a></li>
+						<li class="menu-item"><a href="#">ОБРАТНАЯ СВЯЗЬ</a></li>
+					</ul>
+					<div class="menu-item social-block">
+						<a class="social-item _fb" href="#"> </a>
+						<a class="social-item _tw" href="#"> </a>
+						<a class="social-item _vk" href="#"> </a>
+					</div>
+				</div>
+            </div>
+			<div class="header-block language-block">
+				<a href="#" class="_active">RU</a><span>|</span>	<a href="#">EN</a>
+			</div>
+			<div class="header-block logo"><a href="http://taxiinfo.by/"><img src="img/logo.png" alt=""></a></div>
+			<div class="header-block navigation-layer mobile-hidden">
+				<div class="menu-wrapper">
+					<ul class="menu">
+						<li class="menu-item"><a class="_active" href="#">О ПРОЕКТЕ</a></li>
+						<li class="menu-item"><a href="#">РЕКЛАМОДАТЕЛЯМ</a></li>
+						<li class="menu-item"><a href="#">СОВЕТЫ</a></li>
+						<li class="menu-item"><a href="#">КОНТАКТЫ</a></li>
+						<li class="menu-item"><a href="#">ОБРАТНАЯ СВЯЗЬ</a></li>
+					</ul>
+				</div>
+				<div class="social-block">
+					<a class="social-item _fb" href="#"> </a>
+					<a class="social-item _tw" href="#"> </a>
+					<a class="social-item _vk" href="#"> </a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="page-section top-info-section">
+		<div class="menu-city-wrapper">
+			<div class="content-center">
+				<ul class="menu-city">
+					<li class="menu-city-item"><a class="_active" href="#">МИНСК</a></li>
+					<li class="menu-city-item"><a href="#">БРЕСТ</a></li>
+					<li class="menu-city-item"><a href="#"> ВИТЕБСК</a></li>
+					<li class="menu-city-item"><a href="#">ГРОДНО</a></li>
+					<li class="menu-city-item"><a href="#">ГОМЕЛЬ</a></li>
+					<li class="menu-city-item"><a href="#">МОГИЛЕВ</a></li>
+					<li class="menu-city-item"><a href="#"> ПИНСК</a></li>
+					<li class="menu-city-item"><a href="#"> СОЛИГОРСК</a></li>
+					<li class="menu-city-item">
+						<select class="select-city" id="anotherCity" name="anotherCity">
+							<option>ДРУГОЙ ГОРОД</option>
+							<option value="/city/baranavichy">Барановичи</option>
+							<option value="/city/bobruisk">Бобруйск</option>
+							<option value="/city/borisov">Борисов</option>
+							<option value="/city/volkovysk">Волковыск</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content-center">
+			<div class="info-block">
+				<p class="info-caption">Информационный портал</p>
+				<h1>Все о такси в
+					<span class="select-wrapper">
+						<select class="select-city" id="anotherCityTop" name="anotherCityTop">
+							<option>Минске</option>
+							<option value="/city/baranavichy">Барановичах</option>
+							<option value="/city/bobruisk">Бобруйске</option>
+							<option value="/city/borisov">Борисове</option>
+							<option value="/city/volkovysk">Волковыске</option>
+						</select>
+					</span>
+				</h1>
+				<p>тарифы, услуги, реальные отзывы</p>
+				<div class="info-block-popular">
+					<p><span class="info-popular-phone">135</span> ЛУЧШЕЕ ПО РЕЙТИНГУ ТАКСИ</p>
+					<p><span class="info-popular-phone">181</span> САМОЕ ДЕШЕВОЕ ТАКСИ</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section select-section">
+		<div class="content-center">
+			<h2>Выбрать свое такси</h2>
+            <div class="select-section-block price mobile-visible">
+                <p>Цены в:</p>
+                <div class="select-block">
+                    <div class="select-block-item _active">RUB</div>
+                    <div class="select-block-item">EUR</div>
+                    <div class="select-block-item">USD</div>
+                </div>
+            </div>
+			<div class="select-section-block sorting">
+				<p>Сортировать:</p>
+				<div class="select-block">
+					<div class="select-block-item _active">цена</div>
+					<div class="select-block-item">рейтинг</div>
+				</div>
+			</div>
+			<div class="select-section-block type-taxi">
+				<p>Тип такси:</p>
+				<div class="select-block _cars">
+					<div class="select-block-item _light _active"></div>
+					<div class="select-block-item _medium"></div>
+					<div class="select-block-item _truck"></div>
+				</div>
+			</div>
+			<div class="select-section-block type-trip">
+				<p>Тип поездки:</p>
+				<div class="select-block">
+					<div class="select-block-item _active">город</div>
+					<div class="select-block-item">за городом</div>
+				</div>
+			</div>
+			<div class="select-section-block price mobile-hidden">
+				<p>Цены в:</p>
+				<div class="select-block">
+					<div class="select-block-item _active">RUB</div>
+					<div class="select-block-item">EUR</div>
+					<div class="select-block-item">USD</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section main-section">
+		<div class="content-center">
+			<div class="advertising">160/600</div>
+			<div class="main-list-wrapper">
+				<div class="main-list mainList">
+					<div class="main-list-item item">
+						<h2>1. Минские автолинии</h2>
+						<div class="main-item-content clearfix">
+                            <div class="item-phones right-block mobile-visible">
+                                <div class="short-phone"><a href="#">157</a></div>
+                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
+                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
+                                <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                            </div>
+							<div class="item-content-block left-block item-briefly">
+                                <div class="left-block">
+                                    <div class="rating">
+                                        <img src="img/beta_stars.png" alt=""/>
+                                    </div>
+                                    <div class="services">
+                                        <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
+                                        <div class="service-item _driver"><img src="img/icon-driver.png" alt=""></div>
+                                        <div class="service-item _truck"><img src="img/icon-truck.png" alt=""></div>
+                                    </div>
+                                    <a class="button button-more mobile-hidden" href="#">ПОДРОБНЕЕ</a>
+                                </div>
+                                <div class="item-reviews">
+                                    <a class="reviews" href="#">Отзывы
+                                        <div class="reviews-num">3</div></a>
+                                </div>
+							</div>
+							<div class="item-content-block right-block">
+								<div class="item-phones mobile-hidden">
+									<div class="short-phone"><a href="#">157</a></div>
+									<div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
+									<div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
+									<div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+								</div>
+								<div class="item-info">
+									<table class="grid mobile-hidden">
+										<tbody>
+										<tr>
+											<td>Посадка</td>
+											<th>18 000</th>
+										</tr>
+										<tr>
+											<td>Мин. стоимость</td>
+											<th>20 000</th>
+										</tr>
+										<tr>
+											<td>1 км</td>
+											<th>6 000</th>
+										</tr>
+										</tbody>
+									</table>
+                                    <table class="grid mobile-visible">
+                                        <tbody>
+                                        <tr>
+                                            <td>Посадка</td>
+                                            <td>1 км</td>
+                                            <td>Мин. стоимость</td>
+                                        </tr>
+                                        <tr>
+                                            <th>18 000</th>
+                                            <th>5 000</th>
+                                            <th>20 000</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+									<p class="mobile-hidden">Последнее обновление от  <span class="date">01.07.2015</span></p>
+                                    <div class="mobile-visible clearfix">
+                                        <a class="button button-more button-mobile" href="#">ПОДРОБНЕЕ</a>
+                                        <p class="grid-info-txt">Инфо от  <span class="date">01.07.2015</span></p>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                    <div class="main-list-item item">
+                        <h2>1. Минские автолинии</h2>
+                        <div class="main-item-content clearfix">
+                            <div class="item-phones right-block mobile-visible">
+                                <div class="short-phone"><a href="#">157</a></div>
+                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
+                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
+                                <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                            </div>
+                            <div class="item-content-block left-block item-briefly">
+                                <div class="left-block">
+                                    <div class="rating">
+                                        <img src="img/beta_stars.png" alt=""/>
+                                    </div>
+                                    <div class="services">
+                                        <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
+                                        <div class="service-item _driver"><img src="img/icon-driver.png" alt=""></div>
+                                        <div class="service-item _truck"><img src="img/icon-truck.png" alt=""></div>
+                                    </div>
+                                    <a class="button button-more mobile-hidden" href="#">ПОДРОБНЕЕ</a>
+                                </div>
+                                <div class="item-reviews">
+                                    <a class="reviews" href="#">Отзывы
+                                        <div class="reviews-num">3</div></a>
+                                </div>
+                            </div>
+                            <div class="item-content-block right-block">
+                                <div class="item-phones mobile-hidden">
+                                    <div class="short-phone"><a href="#">157</a></div>
+                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
+                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
+                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                </div>
+                                <div class="item-info">
+                                    <table class="grid mobile-hidden">
+                                        <tbody>
+                                        <tr>
+                                            <td>Посадка</td>
+                                            <th>18 000</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Мин. стоимость</td>
+                                            <th>20 000</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1 км</td>
+                                            <th>6 000</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="grid mobile-visible">
+                                        <tbody>
+                                        <tr>
+                                            <td>Посадка</td>
+                                            <td>1 км</td>
+                                            <td>Мин. стоимость</td>
+                                        </tr>
+                                        <tr>
+                                            <th>18 000</th>
+                                            <th>5 000</th>
+                                            <th>20 000</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="mobile-hidden">Последнее обновление от  <span class="date">01.07.2015</span></p>
+                                    <div class="mobile-visible clearfix">
+                                        <a class="button button-more button-mobile" href="#">ПОДРОБНЕЕ</a>
+                                        <p class="grid-info-txt">Инфо от  <span class="date">01.07.2015</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-list-item item">
+                        <h2>1. Минские автолинии</h2>
+                        <div class="main-item-content clearfix">
+                            <div class="item-phones right-block mobile-visible">
+                                <div class="short-phone"><a href="#">157</a></div>
+                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
+                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
+                                <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                            </div>
+                            <div class="item-content-block left-block item-briefly">
+                                <div class="left-block">
+                                    <div class="rating">
+                                        <img src="img/beta_stars.png" alt=""/>
+                                    </div>
+                                    <div class="services">
+                                        <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
+                                        <div class="service-item _driver"><img src="img/icon-driver.png" alt=""></div>
+                                        <div class="service-item _truck"><img src="img/icon-truck.png" alt=""></div>
+                                    </div>
+                                    <a class="button button-more mobile-hidden" href="#">ПОДРОБНЕЕ</a>
+                                </div>
+                                <div class="item-reviews">
+                                    <a class="reviews" href="#">Отзывы
+                                        <div class="reviews-num">3</div></a>
+                                </div>
+                            </div>
+                            <div class="item-content-block right-block">
+                                <div class="item-phones mobile-hidden">
+                                    <div class="short-phone"><a href="#">157</a></div>
+                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
+                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
+                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                </div>
+                                <div class="item-info">
+                                    <table class="grid mobile-hidden">
+                                        <tbody>
+                                        <tr>
+                                            <td>Посадка</td>
+                                            <th>18 000</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Мин. стоимость</td>
+                                            <th>20 000</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1 км</td>
+                                            <th>6 000</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="grid mobile-visible">
+                                        <tbody>
+                                        <tr>
+                                            <td>Посадка</td>
+                                            <td>1 км</td>
+                                            <td>Мин. стоимость</td>
+                                        </tr>
+                                        <tr>
+                                            <th>18 000</th>
+                                            <th>5 000</th>
+                                            <th>20 000</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="mobile-hidden">Последнее обновление от  <span class="date">01.07.2015</span></p>
+                                    <div class="mobile-visible clearfix">
+                                        <a class="button button-more button-mobile" href="#">ПОДРОБНЕЕ</a>
+                                        <p class="grid-info-txt">Инфо от  <span class="date">01.07.2015</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-list-item item">
+                        <h2>1. Минские автолинии</h2>
+                        <div class="main-item-content clearfix">
+                            <div class="item-phones right-block mobile-visible">
+                                <div class="short-phone"><a href="#">157</a></div>
+                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
+                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
+                                <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                            </div>
+                            <div class="item-content-block left-block item-briefly">
+                                <div class="left-block">
+                                    <div class="rating">
+                                        <img src="img/beta_stars.png" alt=""/>
+                                    </div>
+                                    <div class="services">
+                                        <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
+                                        <div class="service-item _driver"><img src="img/icon-driver.png" alt=""></div>
+                                        <div class="service-item _truck"><img src="img/icon-truck.png" alt=""></div>
+                                    </div>
+                                    <a class="button button-more mobile-hidden" href="#">ПОДРОБНЕЕ</a>
+                                </div>
+                                <div class="item-reviews">
+                                    <a class="reviews" href="#">Отзывы
+                                        <div class="reviews-num">3</div></a>
+                                </div>
+                            </div>
+                            <div class="item-content-block right-block">
+                                <div class="item-phones mobile-hidden">
+                                    <div class="short-phone"><a href="#">157</a></div>
+                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
+                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
+                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                </div>
+                                <div class="item-info">
+                                    <table class="grid mobile-hidden">
+                                        <tbody>
+                                        <tr>
+                                            <td>Посадка</td>
+                                            <th>18 000</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Мин. стоимость</td>
+                                            <th>20 000</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1 км</td>
+                                            <th>6 000</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="grid mobile-visible">
+                                        <tbody>
+                                        <tr>
+                                            <td>Посадка</td>
+                                            <td>1 км</td>
+                                            <td>Мин. стоимость</td>
+                                        </tr>
+                                        <tr>
+                                            <th>18 000</th>
+                                            <th>5 000</th>
+                                            <th>20 000</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="mobile-hidden">Последнее обновление от  <span class="date">01.07.2015</span></p>
+                                    <div class="mobile-visible clearfix">
+                                        <a class="button button-more button-mobile" href="#">ПОДРОБНЕЕ</a>
+                                        <p class="grid-info-txt">Инфо от  <span class="date">01.07.2015</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-list-item item">
+                        <h2>1. Минские автолинии</h2>
+                        <div class="main-item-content clearfix">
+                            <div class="item-phones right-block mobile-visible">
+                                <div class="short-phone"><a href="#">157</a></div>
+                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
+                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
+                                <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                            </div>
+                            <div class="item-content-block left-block item-briefly">
+                                <div class="left-block">
+                                    <div class="rating">
+                                        <img src="img/beta_stars.png" alt=""/>
+                                    </div>
+                                    <div class="services">
+                                        <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
+                                        <div class="service-item _driver"><img src="img/icon-driver.png" alt=""></div>
+                                        <div class="service-item _truck"><img src="img/icon-truck.png" alt=""></div>
+                                    </div>
+                                    <a class="button button-more mobile-hidden" href="#">ПОДРОБНЕЕ</a>
+                                </div>
+                                <div class="item-reviews">
+                                    <a class="reviews" href="#">Отзывы
+                                        <div class="reviews-num">3</div></a>
+                                </div>
+                            </div>
+                            <div class="item-content-block right-block">
+                                <div class="item-phones mobile-hidden">
+                                    <div class="short-phone"><a href="#">157</a></div>
+                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
+                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
+                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                </div>
+                                <div class="item-info">
+                                    <table class="grid mobile-hidden">
+                                        <tbody>
+                                        <tr>
+                                            <td>Посадка</td>
+                                            <th>18 000</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Мин. стоимость</td>
+                                            <th>20 000</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1 км</td>
+                                            <th>6 000</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="grid mobile-visible">
+                                        <tbody>
+                                        <tr>
+                                            <td>Посадка</td>
+                                            <td>1 км</td>
+                                            <td>Мин. стоимость</td>
+                                        </tr>
+                                        <tr>
+                                            <th>18 000</th>
+                                            <th>5 000</th>
+                                            <th>20 000</th>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="mobile-hidden">Последнее обновление от  <span class="date">01.07.2015</span></p>
+                                    <div class="mobile-visible clearfix">
+                                        <a class="button button-more button-mobile" href="#">ПОДРОБНЕЕ</a>
+                                        <p class="grid-info-txt">Инфо от  <span class="date">01.07.2015</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-visible button-block">
+                        <a class="button button-show_more button-mobile" href="#">показать еще</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section about-section">
+		<div class="content-center">
+			<h2>О проекте</h2>
+
+			<p>Taxiinfo.by – информационный портал, целью которого является предоставление жителям Беларуси, а также гостям
+				нашей страны актуальной информации о службах легкового и грузового такси Беларуси и очень популярного у
+				беларусов города Вильнюса.</p>
+
+			<p>На сайте Вы сможете найти не только контакты интересующего Вас такси, но и актуальные тарифы, полный список
+				услуг и их стоимость. Вся информация предоставляется напрямую службами такси, либо берется из интернета.
+				Актуальность информации можно легко отследить по датам обновления, которые указаны под тарифами каждого
+				конкретного такси.
+			</p>
+
+			<p>Все службы сортируются по цене, а также по рейтингу, который составляется, опираясь на объективные оценки
+				пользователей определенной службы. Это позволит Вам выбрать лучшее такси по соотношению цена/качество.
+				Следует отметить, что сайт защищен от преднамеренной «накрутки» рейтинга, что позволяет предоставлять
+				посетителям наиболее объективную информацию по качеству обслуживания того или иного такси.
+			</p>
+
+			<p>Помимо рейтинга любой пользователь, пройдя легкую и быструю процедуру регистрации, может оставить свой отзыв
+				о конкретном такси или водителе, как положительный, так и отрицательный.</p>
+
+			<p>Что делать, если Вас обсчитали? За сколько времени до поездки вызывать такси? Куда жаловаться на
+				безответственных или грубых водителей? Ответы на эти вопросы, а также большое количество другой полезной
+				информации о пользовании службами такси Вы найдете в нашем разделе «Советы».</p>
+
+			<p>Гостям нашей страны будет полезна функция пересчета тарифов в иностранную валюту, а также версия сайта на
+				английском языке.</p>
+
+			<p>Мы надеемся, что проект taxiinfo.by облегчит Ваш поиск и выбор качественной службы такси в каком бы городе
+				Беларуси Вы не находились.
+			</p>
+
+			<p>Если у Вас остались вопросы, замечания либо пожелания, пожалуйста, воспользуйтесь формой обратной связи.
+			</p>
+
+			<p>С уважением к Вам,<br/>
+				Команда <a href="http://taxiinfo.by/">taxiinfo.by</a> </p>
+		</div>
+	</section>
+	<footer class="page-footer">
+        <div class="content-center clearfix">
+            <div class="menu-mobile mobile-visible">
+                <a class="menu-mobile-icon" href="#sidr" id="mobile-bottom-menu-link"><img src="img/menu-mobile-icon_footer.png" /></a>
+            </div>
+            <div class="social-block">
+                <a class="social-item _fb" href="#"> </a>
+                <a class="social-item _tw" href="#"> </a>
+                <a class="social-item _vk" href="#"> </a>
+            </div>
+            <div class="logo"><a href="http://taxiinfo.by/"><img src="img/black-white-logo.png" alt=""></a></div>
+            <div class="footer-menu-wrapper">
+                <ul class="menu mobile-hidden">
+                    <li class="menu-item"><a href="#">О ПРОЕКТЕ</a></li>
+                    <li class="menu-item"><a href="#"> РЕКЛАМОДАТЕЛЯМ</a></li>
+                    <li class="menu-item"><a href="#">СОВЕТЫ</a></li>
+                    <li class="menu-item"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu-item"><a href="#"> ОБРАТНАЯ СВЯЗЬ</a></li>
+                </ul>
+            </div>
+        </div>
+	</footer>
+
+
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="js/vendor/select2.min.js"></script>
+		<script src="js/vendor/jquery.sidr.min.js"></script>
+		<script src="js/vendor/jquery.touchwipe.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
