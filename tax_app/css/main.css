@@ -133,11 +133,11 @@ table {
 .filter-swither-item {
     float: left;
     padding: 12px 7px;
-    border: 2px solid #d9d9d9;
-    border-right:1px solid #d9d9d9;
-    border-left: 1px solid #d9d9d9;
+    border: 2px solid #fff;
+    border-right:1px solid #fff;
+    border-left: 1px solid #fff;
     font-size: 15px;
-    color: #b2b2b2;
+    color: #fff;
     font-weight: 600;
     cursor: pointer;
     -webkit-transition: all .2s;
@@ -151,13 +151,13 @@ table {
 }
 
 .filter-swither-item:first-child {
-    border-right: 2px solid #d9d9d9;
-    border-left: 2px solid #d9d9d9;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
 }
 
 .filter-swither-item:last-child {
-    border-right: 2px solid #d9d9d9;
-    border-left: 2px solid #d9d9d9;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
 }
 
 ul.filter-switcher {
@@ -236,7 +236,7 @@ ul.filter-switcher {
   padding: 0 1px;
   overflow: hidden;
   white-space: nowrap;
-  cursor: pointer;
+  cursor: default;  
   font-size: 30px;
   color: #FFD700;
   position: relative;
@@ -248,16 +248,21 @@ ul.filter-switcher {
 .star-rating > fieldset > input:checked ~ label:before {
   content: '\f005  ';
   color: #FFD700;
-
+  /* width: 14px; */
+  /* display: inline-block; */
+  /* overflow: hidden; */
 }
 .star-rating > fieldset:not(:checked) > label:after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,.0));
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,.0)); */
+    content: '\f005 ';
+    color: #EBEBEB;
+    z-index: -1;
 }
 
 /*end rating-block*/
@@ -299,26 +304,31 @@ p.main-title {
     letter-spacing: 0px;
 }
 
-.phonesList p {
+.phonesList a {
     font-size: 18px;
     font-weight: 600;
     margin: 8px 0 8px 8px;
     padding-left: 22px;
+    display: block;
+}
+
+.phonesList a:hover {
+    color: #000;
 }
 
 .phonesList span {
     color: #a4a4a4;
     font-weight: normal;
 }
-p.velc {
+a.velc {
     background: url('../img/velcom.png') no-repeat;
 }
 
-p.mts {
+a.mts {
     background: url('../img/mts.png') no-repeat;
 }
 
-p.life {
+a.life {
     background: url('../img/life.png') no-repeat;
 }
 
@@ -724,24 +734,55 @@ p.service-mobile-title {
     li.filter-item.driving-car .filter-swither-item {
         padding: 12px 5px;
     }
+    ul.user-feedback-list p {
+        font-size: 16px;
+    }
+
+    .set-rating-wrapper p {
+        font-size: 16px;
+    }
+    .deals-block tr:last-child td {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 360px) {
-    .side.phonesList p {
+    .side.phonesList a {
         font-size: 13px;
     }
     li.filter-item.driving-car .filter-swither-item {
         padding: 12px 2px;
     }
     li.filter-item.currency-filter .filter-swither-item {
-    padding: 12px 5px;
-}
+        padding: 12px 5px;
+    }
+    li.filter-item.driving-car .filter-switcher li {
+        font-size: 12px;
+    }
+    ul.user-feedback-list p {
+        font-size: 16px;
+    }
+    .deals-block tr:last-child td {
+        font-size: 12px;
+    }
+    .set-rating-wrapper p {
+        font-size: 16px;
+    }
+    .phonesList span {
+        font-size: 9px;
+    }
 }
 .mobile-visible {display: none;}
 .fixed-menu-under-block {
     margin-bottom: 150px;
 }
 .select-section.fixed-section {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.settings-block.fixed-section {
     position: fixed;
     top: 0;
     z-index: 100;
@@ -1024,4 +1065,38 @@ a#mobile-top-menu-link-internal {
     text-align: left;
     display: block;
     padding: 20px;
+}
+
+
+.star-rating > fieldset > input:checked ~ label.half-star:before {
+    width: 14px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+a.online-call-link {
+    text-decoration: underline;
+}
+
+a.online-call-link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.services tr:hover .online-call-link {
+    color: #fff;
+}
+
+.rating-wrapper input {
+    height: 22px;
+    /* display: inline-block; */
+    /* padding: 5px 0; */
+}
+
+.rating-wrapper label {
+    line-height: 22px;
+}
+
+.call-button:hover {
+    color: #000;
 }

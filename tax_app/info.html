@@ -56,8 +56,8 @@
             <li class="filter-item car-type-filter">
                 <p class="filter-item-title">Тип такси:</p>
                 <ul class="filter-switcher">
-                    <li class="filter-swither-item _active"><div class="img-filter-wrapper"><img src="img/filter-car.png"></div></li>
-                    <li class="filter-swither-item"><div class="img-filter-wrapper"><img src="img/filter-car-big.png"></div></li>
+                    <li class="filter-swither-item _active" title="Легковое"><div class="img-filter-wrapper"><img src="img/filter-car.png"></div></li>
+                    <li class="filter-swither-item" title="Минивэн"><div class="img-filter-wrapper"><img src="img/filter-car-big.png"></div></li>
                 </ul>
             </li>
             <li class="filter-item driving-car">
@@ -89,7 +89,7 @@
                         <input class="{split:2}" id="rating_1_0" value="5" type="radio" name="rating_1" disabled="" />
                         <label for="rating_1_0"></label>
                         <input class="{split:2}" id="rating_1_1" value="4" type="radio" name="rating_1" checked="checked" disabled/>
-                        <label for="rating_1_1"></label>
+                        <label for="rating_1_1" class="half-star"></label>
                         <input class="{split:2}" id="rating_1_2" value="3" type="radio" name="rating_1" disabled/>
                         <label for="rating_1_2"></label>
                         <input class="{split:2}" id="rating_1_3" value="2" type="radio" name="rating_1" disabled/>
@@ -102,16 +102,16 @@
                 </span>  
                 <div class="clearfix"></div>
                 <div class="call-block">
-                    <a href="mailto:152" class="call-button"><img class="phone-block" src="img/phone-icon.png"/>152</a>
+                    <a class="call-button"href="tel:152"><img class="phone-block" src="img/phone-icon.png"/>152</a>
                 </div>                      
             </div>
             <div class="side phonesList">
-                <p class="velc"><span>+375 29</span> 6666157</p>
-                <p class="mts"><span>+375 29</span> 7777157</p>
-                <p class="life"><span>+375 25</span> 9999157</p>
-                <p class="velc"><span>+375 29</span> 6666157</p>
-                <p class="mts"><span>+375 29</span> 7777157</p>
-                <p class="life"><span>+375 25</span> 9999157</p>
+                <a class="velc" href="tel:+375296666157"><span>+375 29</span> 6666157</a>
+                <a class="mts" href="tel:+375297777157"><span>+375 29</span> 7777157</a>
+                <a class="life" href="tel:+375259999157"><span>+375 25</span> 9999157</a>
+                <a class="velc" href="tel:+375296666157"><span>+375 29</span> 6666157</a>
+                <a class="mts" href="tel:+375297777157"><span>+375 29</span> 7777157</a>
+                <a class="life" href="tel:+375259999157"><span>+375 25</span> 9999157</a>
             </div>
             <div class="deals-block">
                 <table class="grid">
@@ -143,7 +143,7 @@
                     <div class="image-wrapper">
                         <img alt="Онлацн вызов"  src="img/1icon.png">
                     </div>
-                    <div class="text-wrapper">Онлайн вызов</div>
+                    <div class="text-wrapper"><a class="online-call-link" href="#">Онлайн вызов</a></div>
                 </td> 
                 <td class="info-servise">
                     
@@ -361,6 +361,7 @@
         <script src="js/vendor/is.mobile.js"></script>
         <script src="js/vendor/jquery.maskedinput.min.js"></script>
         <script src="js/vendor/select2.min.js"></script>
-        <script src="js/main-info.js"></script>
+        <script src="js/vendor/jquery.sidr.min.js"></script>
+        <script src="js/info.js"></script>
     </body>
 </html>
