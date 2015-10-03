@@ -18,11 +18,21 @@ $(document).ready(function(){
 		displace: false
 	});
 
-	/*$(window).touchwipe({
+	$(window).touchwipe({
 		wipeLeft: function() {
 			// Close
 			$.sidr('close', 'sidr');
-			console.log('close')
+			
+		},
+		wipeUp: function() {
+			// Close
+			$.sidr('close', 'sidr');
+			
+		},
+		wipeDown: function() {
+			// Close
+			$.sidr('close', 'sidr');
+			
 		},
 		wipeRight: function() {
 			// Open
@@ -30,7 +40,7 @@ $(document).ready(function(){
 		},
 		preventDefaultEvents: false
 	});
-*/
+
 	addMainPageEvents();
 });
 
