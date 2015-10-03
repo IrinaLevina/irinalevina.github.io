@@ -17,11 +17,11 @@ $(document).ready(function(){
 		displace: false
 	});
 
-	/*$(window).touchwipe({
+	$(body).touchwipe({
 		wipeLeft: function() {
 			// Close
 			$.sidr('close', 'sidr');
-			console.log('close')
+			console.log('close');
 		},
 		wipeRight: function() {
 			// Open
@@ -29,7 +29,7 @@ $(document).ready(function(){
 		},
 		preventDefaultEvents: false
 	});
-*/
+
 	addInfoPageEvents();
 });
 
