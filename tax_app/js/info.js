@@ -17,7 +17,7 @@ $(document).ready(function(){
 		displace: false
 	});
 
-	$(body).touchwipe({
+	$('body').touchwipe({
 		wipeLeft: function() {
 			// Close
 			$.sidr('close', 'sidr');
