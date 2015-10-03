@@ -17,11 +17,6 @@ $(document).ready(function(){
 		side: 'left',
 		displace: false
 	});
-	$('.select-block-item_car').hover(function(){
-		$(this).find('.select-block-item_popup').fadeIn();
-	}, function(){
-		$(this).find('.select-block-item_popup').hide();
-	});
 
 	$(window).touchwipe({
 		wipeLeft: function() {

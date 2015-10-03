@@ -104,8 +104,8 @@
 				</h1>
 				<p>тарифы, услуги, реальные отзывы</p>
 				<div class="info-block-popular">
-					<p><a href="#" target="_blank"><span class="info-popular-phone">135</span> ЛУЧШЕЕ ПО РЕЙТИНГУ ТАКСИ</a></p>
-					<p><a href="#" target="_blank"><span class="info-popular-phone">181</span> САМОЕ ДЕШЕВОЕ ТАКСИ</a></p>
+					<p><span class="info-popular-phone">135</span> ЛУЧШЕЕ ПО РЕЙТИНГУ ТАКСИ</p>
+					<p><span class="info-popular-phone">181</span> САМОЕ ДЕШЕВОЕ ТАКСИ</p>
 				</div>
 			</div>
 		</div>
@@ -131,9 +131,9 @@
 			<div class="select-section-block type-taxi">
 				<p>Тип такси:</p>
 				<div class="select-block _cars">
-					<div class="select-block-item select-block-item_car _light _active"><div class="select-block-item_popup">Легковое</div></div>
-					<div class="select-block-item select-block-item_car _medium"><div class="select-block-item_popup"> Минивэн</div></div>
-					<div class="select-block-item select-block-item_car _truck"><div class="select-block-item_popup"> Грузовое</div></div>
+					<div class="select-block-item _light _active"></div>
+					<div class="select-block-item _medium"></div>
+					<div class="select-block-item _truck"></div>
 				</div>
 			</div>
 			<div class="select-section-block type-trip">
@@ -159,7 +159,7 @@
 			<div class="main-list-wrapper">
 				<div class="main-list mainList">
 					<div class="main-list-item item">
-						<h2><a href="#"> 1. Минские автолинии</a></h2>
+						<h2>1. Минские автолинии</h2>
 						<div class="main-item-content clearfix">
                             <div class="item-phones right-block mobile-visible">
                                 <div class="short-phone"><a href="#">157</a></div>
@@ -170,26 +170,7 @@
 							<div class="item-content-block left-block item-briefly">
                                 <div class="left-block">
                                     <div class="rating">
-                                        <div id="rating_1" class="rating">
-										    <span id="rating_1">
-										    <div class="star-rating">
-										        <fieldset>
-										            <input class="{split:2}" id="rating_1_0" value="5" type="radio" name="rating_1" disabled="" />
-										            <label for="rating_1_0"></label>
-										            <input class="{split:2}" id="rating_1_1" value="4" type="radio" name="rating_1" checked="checked" disabled/>
-										            <label for="rating_1_1" class="half-star"></label>
-										            <input class="{split:2}" id="rating_1_2" value="3" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_2"></label>
-										            <input class="{split:2}" id="rating_1_3" value="2" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_3"></label>
-										            <input class="{split:2}" id="rating_1_4" value="1" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_4"></label>
-										            
-										        </fieldset>
-										    </div>
-										    </span>  
-										    <div class="clearfix"></div>                  
-										</div>
+                                        <img src="img/beta_stars.png" alt=""/>
                                     </div>
                                     <div class="services">
                                         <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
@@ -252,7 +233,7 @@
 					</div>
 
                     <div class="main-list-item item">
-                        <h2><a href="#"> 1. Минские автолинии</a></h2>
+                        <h2>1. Минские автолинии</h2>
                         <div class="main-item-content clearfix">
                             <div class="item-phones right-block mobile-visible">
                                 <div class="short-phone"><a href="#">157</a></div>
@@ -263,26 +244,7 @@
                             <div class="item-content-block left-block item-briefly">
                                 <div class="left-block">
                                     <div class="rating">
-                                        <div id="rating_1" class="rating">
-										    <span id="rating_1">
-										    <div class="star-rating">
-										        <fieldset>
-										            <input class="{split:2}" id="rating_1_0" value="5" type="radio" name="rating_1" disabled="" />
-										            <label for="rating_1_0"></label>
-										            <input class="{split:2}" id="rating_1_1" value="4" type="radio" name="rating_1" checked="checked" disabled/>
-										            <label for="rating_1_1" class="half-star"></label>
-										            <input class="{split:2}" id="rating_1_2" value="3" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_2"></label>
-										            <input class="{split:2}" id="rating_1_3" value="2" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_3"></label>
-										            <input class="{split:2}" id="rating_1_4" value="1" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_4"></label>
-										            
-										        </fieldset>
-										    </div>
-										    </span>  
-										    <div class="clearfix"></div>                  
-										</div>
+                                        <img src="img/beta_stars.png" alt=""/>
                                     </div>
                                     <div class="services">
                                         <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
@@ -344,7 +306,7 @@
                         </div>
                     </div>
                     <div class="main-list-item item">
-                        <h2><a href="#"> 1. Минские автолинии</a></h2>
+                        <h2>1. Минские автолинии</h2>
                         <div class="main-item-content clearfix">
                             <div class="item-phones right-block mobile-visible">
                                 <div class="short-phone"><a href="#">157</a></div>
@@ -355,26 +317,7 @@
                             <div class="item-content-block left-block item-briefly">
                                 <div class="left-block">
                                     <div class="rating">
-                                        <div id="rating_1" class="rating">
-										    <span id="rating_1">
-										    <div class="star-rating">
-										        <fieldset>
-										            <input class="{split:2}" id="rating_1_0" value="5" type="radio" name="rating_1" disabled="" />
-										            <label for="rating_1_0"></label>
-										            <input class="{split:2}" id="rating_1_1" value="4" type="radio" name="rating_1" checked="checked" disabled/>
-										            <label for="rating_1_1" class="half-star"></label>
-										            <input class="{split:2}" id="rating_1_2" value="3" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_2"></label>
-										            <input class="{split:2}" id="rating_1_3" value="2" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_3"></label>
-										            <input class="{split:2}" id="rating_1_4" value="1" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_4"></label>
-										            
-										        </fieldset>
-										    </div>
-										    </span>  
-										    <div class="clearfix"></div>                  
-										</div>
+                                        <img src="img/beta_stars.png" alt=""/>
                                     </div>
                                     <div class="services">
                                         <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
@@ -436,7 +379,7 @@
                         </div>
                     </div>
                     <div class="main-list-item item">
-                        <h2><a href="#"> 1. Минские автолинии</a></h2>
+                        <h2>1. Минские автолинии</h2>
                         <div class="main-item-content clearfix">
                             <div class="item-phones right-block mobile-visible">
                                 <div class="short-phone"><a href="#">157</a></div>
@@ -447,26 +390,7 @@
                             <div class="item-content-block left-block item-briefly">
                                 <div class="left-block">
                                     <div class="rating">
-                                        <div id="rating_1" class="rating">
-										    <span id="rating_1">
-										    <div class="star-rating">
-										        <fieldset>
-										            <input class="{split:2}" id="rating_1_0" value="5" type="radio" name="rating_1" disabled="" />
-										            <label for="rating_1_0"></label>
-										            <input class="{split:2}" id="rating_1_1" value="4" type="radio" name="rating_1" checked="checked" disabled/>
-										            <label for="rating_1_1" class="half-star"></label>
-										            <input class="{split:2}" id="rating_1_2" value="3" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_2"></label>
-										            <input class="{split:2}" id="rating_1_3" value="2" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_3"></label>
-										            <input class="{split:2}" id="rating_1_4" value="1" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_4"></label>
-										            
-										        </fieldset>
-										    </div>
-										    </span>  
-										    <div class="clearfix"></div>                  
-										</div>
+                                        <img src="img/beta_stars.png" alt=""/>
                                     </div>
                                     <div class="services">
                                         <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
@@ -528,7 +452,7 @@
                         </div>
                     </div>
                     <div class="main-list-item item">
-                        <h2><a href="#"> 1. Минские автолинии</a></h2>
+                        <h2>1. Минские автолинии</h2>
                         <div class="main-item-content clearfix">
                             <div class="item-phones right-block mobile-visible">
                                 <div class="short-phone"><a href="#">157</a></div>
@@ -539,26 +463,7 @@
                             <div class="item-content-block left-block item-briefly">
                                 <div class="left-block">
                                     <div class="rating">
-                                        <div id="rating_1" class="rating">
-										    <span id="rating_1">
-										    <div class="star-rating">
-										        <fieldset>
-										            <input class="{split:2}" id="rating_1_0" value="5" type="radio" name="rating_1" disabled="" />
-										            <label for="rating_1_0"></label>
-										            <input class="{split:2}" id="rating_1_1" value="4" type="radio" name="rating_1" checked="checked" disabled/>
-										            <label for="rating_1_1" class="half-star"></label>
-										            <input class="{split:2}" id="rating_1_2" value="3" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_2"></label>
-										            <input class="{split:2}" id="rating_1_3" value="2" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_3"></label>
-										            <input class="{split:2}" id="rating_1_4" value="1" type="radio" name="rating_1" disabled/>
-										            <label for="rating_1_4"></label>
-										            
-										        </fieldset>
-										    </div>
-										    </span>  
-										    <div class="clearfix"></div>                  
-										</div>
+                                        <img src="img/beta_stars.png" alt=""/>
                                     </div>
                                     <div class="services">
                                         <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
