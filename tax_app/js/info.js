@@ -21,7 +21,17 @@ $(document).ready(function(){
 		wipeLeft: function() {
 			// Close
 			$.sidr('close', 'sidr');
-			console.log('close');
+			
+		},
+		wipeUp: function() {
+			// Close
+			$.sidr('close', 'sidr');
+			
+		},
+		wipeDown: function() {
+			// Close
+			$.sidr('close', 'sidr');
+			
 		},
 		wipeRight: function() {
 			// Open
