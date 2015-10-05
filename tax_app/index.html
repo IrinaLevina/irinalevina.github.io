@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/select2.css">
         <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/media-queries.css">
         <link rel="stylesheet" href="css/jquery.sidr.light.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -104,8 +105,8 @@
 				</h1>
 				<p>тарифы, услуги, реальные отзывы</p>
 				<div class="info-block-popular">
-					<p><a href="#" target="_blank"><span class="info-popular-phone">135</span> ЛУЧШЕЕ ПО РЕЙТИНГУ ТАКСИ</a></p>
-					<p><a href="#" target="_blank"><span class="info-popular-phone">181</span> САМОЕ ДЕШЕВОЕ ТАКСИ</a></p>
+					<p><a href="tel:135" target="_blank"><span class="info-popular-phone">135</span></a> <a href="#">ЛУЧШЕЕ ПО РЕЙТИНГУ ТАКСИ</a></p>
+					<p><a href="tel:181" target="_blank"><span class="info-popular-phone">181</span></a> <a href="#"> САМОЕ ДЕШЕВОЕ ТАКСИ</a></p>
 				</div>
 			</div>
 		</div>
@@ -162,16 +163,26 @@
 						<h2><a href="#"> 1. Минские автолинии</a></h2>
 						<div class="main-item-content clearfix">
                             <div class="item-phones right-block mobile-visible">
-                                <div class="short-phone"><a href="#">157</a></div>
-                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
-                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
-                                <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                <div class="short-phone"><a href="tel:157">157</a></div>
+                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                <div class="phone-number _life"><img src="img/life-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
                             </div>
 							<div class="item-content-block left-block item-briefly">
                                 <div class="left-block">
-                                    <div class="rating">
-                                        <img src="img/beta_stars.png" alt=""/>
-                                    </div>
+                                    <a class="rating-link" href="#">
+                                        <!--<img src="img/beta_stars.png" alt=""/>-->
+										<div id="rating_1" class="rating">
+											<ul class="rating-list-wrapper">
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item half-star"></li>
+												<li class="rating-list-item empty-star"></li>
+											</ul>
+											<div class="clearfix"></div>
+										</div>
+                                    </a>
                                     <div class="services">
                                         <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
                                         <div class="service-item _driver"><img src="img/icon-driver.png" alt=""></div>
@@ -187,9 +198,9 @@
 							<div class="item-content-block right-block">
 								<div class="item-phones mobile-hidden">
 									<div class="short-phone"><a href="#">157</a></div>
-									<div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
-									<div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
-									<div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+									<div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+									<div class="phone-number _mts"><img src="img/mts-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+									<div class="phone-number _life"><img src="img/life-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
 								</div>
 								<div class="item-info">
 									<table class="grid mobile-hidden">
@@ -236,16 +247,26 @@
                         <h2><a href="#"> 1. Минские автолинии</a></h2>
                         <div class="main-item-content clearfix">
                             <div class="item-phones right-block mobile-visible">
-                                <div class="short-phone"><a href="#">157</a></div>
-                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
-                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
-                                <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                <div class="short-phone"><a href="tel:157">157</a></div>
+                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                <div class="phone-number _life"><img src="img/life-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
                             </div>
                             <div class="item-content-block left-block item-briefly">
                                 <div class="left-block">
-                                    <div class="rating">
-                                        <img src="img/beta_stars.png" alt=""/>
-                                    </div>
+									<a class="rating-link" href="#">
+										<!--<img src="img/beta_stars.png" alt=""/>-->
+										<div id="rating_2" class="rating">
+											<ul class="rating-list-wrapper">
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item half-star"></li>
+												<li class="rating-list-item empty-star"></li>
+											</ul>
+											<div class="clearfix"></div>
+										</div>
+									</a>
                                     <div class="services">
                                         <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
                                         <div class="service-item _driver"><img src="img/icon-driver.png" alt=""></div>
@@ -260,10 +281,10 @@
                             </div>
                             <div class="item-content-block right-block">
                                 <div class="item-phones mobile-hidden">
-                                    <div class="short-phone"><a href="#">157</a></div>
-                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
-                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
-                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                    <div class="short-phone"><a href="tel:157">157</a></div>
+                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
                                 </div>
                                 <div class="item-info">
                                     <table class="grid mobile-hidden">
@@ -309,16 +330,26 @@
                         <h2><a href="#"> 1. Минские автолинии</a></h2>
                         <div class="main-item-content clearfix">
                             <div class="item-phones right-block mobile-visible">
-                                <div class="short-phone"><a href="#">157</a></div>
-                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
-                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
-                                <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                <div class="short-phone"><a href="tel:157">157</a></div>
+                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                <div class="phone-number _life"><img src="img/life-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
                             </div>
                             <div class="item-content-block left-block item-briefly">
                                 <div class="left-block">
-                                    <div class="rating">
-                                        <img src="img/beta_stars.png" alt=""/>
-                                    </div>
+									<a class="rating-link" href="#">
+										<!--<img src="img/beta_stars.png" alt=""/>-->
+										<div id="rating_3" class="rating">
+											<ul class="rating-list-wrapper">
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item half-star"></li>
+												<li class="rating-list-item empty-star"></li>
+												<li class="rating-list-item empty-star"></li>
+											</ul>
+											<div class="clearfix"></div>
+										</div>
+									</a>
                                     <div class="services">
                                         <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
                                         <div class="service-item _driver"><img src="img/icon-driver.png" alt=""></div>
@@ -333,10 +364,10 @@
                             </div>
                             <div class="item-content-block right-block">
                                 <div class="item-phones mobile-hidden">
-                                    <div class="short-phone"><a href="#">157</a></div>
-                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
-                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
-                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                    <div class="short-phone"><a href="tel:157">157</a></div>
+                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
                                 </div>
                                 <div class="item-info">
                                     <table class="grid mobile-hidden">
@@ -382,16 +413,26 @@
                         <h2><a href="#"> 1. Минские автолинии</a></h2>
                         <div class="main-item-content clearfix">
                             <div class="item-phones right-block mobile-visible">
-                                <div class="short-phone"><a href="#">157</a></div>
-                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
-                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
-                                <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                <div class="short-phone"><a href="tel:157">157</a></div>
+                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                <div class="phone-number _life"><img src="img/life-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
                             </div>
                             <div class="item-content-block left-block item-briefly">
                                 <div class="left-block">
-                                    <div class="rating">
-                                        <img src="img/beta_stars.png" alt=""/>
-                                    </div>
+									<a class="rating-link" href="#">
+										<!--<img src="img/beta_stars.png" alt=""/>-->
+										<div id="rating_4" class="rating">
+											<ul class="rating-list-wrapper">
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item half-star"></li>
+												<li class="rating-list-item empty-star"></li>
+											</ul>
+											<div class="clearfix"></div>
+										</div>
+									</a>
                                     <div class="services">
                                         <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
                                         <div class="service-item _driver"><img src="img/icon-driver.png" alt=""></div>
@@ -406,10 +447,10 @@
                             </div>
                             <div class="item-content-block right-block">
                                 <div class="item-phones mobile-hidden">
-                                    <div class="short-phone"><a href="#">157</a></div>
-                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
-                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
-                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                    <div class="short-phone"><a href="tel:157">157</a></div>
+                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
                                 </div>
                                 <div class="item-info">
                                     <table class="grid mobile-hidden">
@@ -455,16 +496,26 @@
                         <h2><a href="#"> 1. Минские автолинии</a></h2>
                         <div class="main-item-content clearfix">
                             <div class="item-phones right-block mobile-visible">
-                                <div class="short-phone"><a href="#">157</a></div>
-                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
-                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
-                                <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                <div class="short-phone"><a href="tel:157">157</a></div>
+                                <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                <div class="phone-number _mts"><img src="img/mts-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                <div class="phone-number _life"><img src="img/life-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
                             </div>
                             <div class="item-content-block left-block item-briefly">
                                 <div class="left-block">
-                                    <div class="rating">
-                                        <img src="img/beta_stars.png" alt=""/>
-                                    </div>
+									<a class="rating-link" href="#">
+										<!--<img src="img/beta_stars.png" alt=""/>-->
+										<div id="rating_5" class="rating">
+											<ul class="rating-list-wrapper">
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item full-star"></li>
+												<li class="rating-list-item half-star"></li>
+												<li class="rating-list-item empty-star"></li>
+											</ul>
+											<div class="clearfix"></div>
+										</div>
+									</a>
                                     <div class="services">
                                         <div class="service-item _online"><a href="#" target="_blank"><img src="img/icon-online.png" alt=""> </a> </div>
                                         <div class="service-item _driver"><img src="img/icon-driver.png" alt=""></div>
@@ -479,10 +530,10 @@
                             </div>
                             <div class="item-content-block right-block">
                                 <div class="item-phones mobile-hidden">
-                                    <div class="short-phone"><a href="#">157</a></div>
-                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> +375 17 2222001</div>
-                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> +375 17 2222001</div>
-                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> +375 17 2222001</div>
+                                    <div class="short-phone"><a href="tel:157">157</a></div>
+                                    <div class="phone-number _velcome"><img src="img/velcome-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                    <div class="phone-number _mts"><img src="img/mts-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
+                                    <div class="phone-number _life"><img src="img/life-icon.jpg"> <a href="tel:80172222001" target="_blank">+375 17 2222001</a></div>
                                 </div>
                                 <div class="item-info">
                                     <table class="grid mobile-hidden">

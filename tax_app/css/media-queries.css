@@ -52,7 +52,7 @@
             .main-list-item {margin: 0 0 54px;padding: 0 0 17px;}
             .item-info {float: left;}
                 .grid {margin: 16px 0;}
-                    .grid th, .grid td {padding: 12px 22px; text-align: center; width: 26%; font-size: 10px; text-transform: uppercase;}
+                    .grid th, .grid td {padding: 12px 22px; text-align: center; width: 26%; font-size: 12px; text-transform: uppercase;}
                     .grid th:last-child, .grid td:last-child {width: 39%;}
                     .grid-info-txt {float: right;}
                 .button-block {text-align: center;}
