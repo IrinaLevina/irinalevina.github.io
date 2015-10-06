@@ -22,7 +22,11 @@ table{border-collapse:collapse;border-spacing:0}
 .settigs-title{color:#fff;font-size:24px}
 .filter-item{float:left;width:240px;margin:14px 0}
 .filter-item-title{color:#fff;font-size:10px}
-.filter-swither-item{float:left;padding:12px 7px;border:2px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;font-size:15px;color:#fff;font-weight:600;cursor:pointer;-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.filter-swither-item{float:left;padding:12px 7px;border:2px solid #fff;border-right:1px solid #fff;
+	border-left:1px solid #fff;font-size:15px;color:#fff;font-weight:600;cursor:pointer;
+	/*-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;
+	-o-transition:all .2s;transition:all .2s;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;
+	box-sizing:border-box*/}
 .filter-swither-item:first-child{border-right:2px solid #fff;border-left:2px solid #fff}
 .filter-swither-item:last-child{border-right:2px solid #fff;border-left:2px solid #fff}
 ul.filter-switcher{margin-top:9px}
@@ -134,6 +138,10 @@ li.filter-item.driving-car .filter-swither-item{padding:12px 5px}
 ul.user-feedback-list p{font-size:16px}
 .set-rating-wrapper p{font-size:16px}
 .deals-block tr:last-child td{font-size:12px}
+}
+@media (max-width: 600px) {
+	.services-item  .text-wrapper { line-height: 30px }
+	.services-item.two-lines .text-wrapper{ line-height: 14px; }
 }
 @media (max-width: 360px) {
 .side.phonesList a{font-size:13px;line-height:16px}
@@ -313,11 +321,15 @@ table{border-collapse:collapse;border-spacing:0}
 .menuContainer li.active a{color:#39c}
 #menu-toggle{float:right}
 .logo{float:left;margin-right:70px;margin-top:-12px}
-.settings-block{width:100%;height:160px;background:url(../img/menu-bg.jpg) no-repeat 100%;background-size:cover;padding:30px 0;box-sizing:border-box}
+.settings-block{width:100%;height:160px;background:url(../img/menu-bg.jpg) no-repeat 100%;background-size:cover;padding:0 0 30px;box-sizing:border-box}
+.info-page .select-section { background: none; }
 .settigs-title{color:#fff;font-size:24px}
 .filter-item{float:left;width:240px;margin:14px 0}
 .filter-item-title{color:#fff;font-size:10px}
-.filter-swither-item{float:left;padding:12px 7px;border:2px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;font-size:15px;color:#fff;font-weight:600;cursor:pointer;-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.filter-swither-item{float:left;padding:12px 7px;border:2px solid #fff;border-right:1px solid #fff;border-left:1px solid #fff;font-size:15px;color:#fff;font-weight:600;cursor:pointer;
+	/*-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all 
+	.2s;-o-transition:all .2s;transition:all .2s;-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;box-sizing:border-box*/}
 .filter-swither-item:first-child{border-right:2px solid #fff;border-left:2px solid #fff}
 .filter-swither-item:last-child{border-right:2px solid #fff;border-left:2px solid #fff}
 ul.filter-switcher{margin-top:9px}
@@ -328,6 +340,8 @@ ul.filter-switcher{margin-top:9px}
 .filter-swither-item.no-border-right{border-right:0}
 .filter-swither-item.no-border-left{border-left:0}
 .filter-item.car-type-filter .filter-swither-item{padding:8px 25px}
+.select-block-item_popup { display: none; }
+.filter-swither-item:hover .select-block-item_popup { display: block }
 .info-page .grid th,.info-page .grid td{background:#EBEBEB;padding:21px 51px;border:4px solid #fff;color:#797979;text-align:center;text-transform:uppercase;font-size:14px}
 .info-page .grid{float:left}
 .control{float:left;display:inline-block;width:300px;height:30px}
@@ -355,7 +369,7 @@ a.life{background:url(../img/life.png) no-repeat}
 img.phone-block{float:left;margin-right:5px}
 .image-wrapper{display:inline-block;float:left}
 .services-item{width:355px;border:1px #000 dashed;padding:6px 10px 0 16px;height:20px;vertical-align:middle}
-.text-wrapper{float:left;line-height:22px;text-transform:uppercase;margin-left:15px}
+.text-wrapper{float:left;line-height:22px;text-transform:uppercase;margin-left:5px}
 .image-wrapper{height:30px;overflow:hidden;width:55px;text-align:center}
 .image-wrapper img{position:relative;top:-30px}
 td.info-servise{text-transform:uppercase;line-height:30px;padding:7px 0 7px 33px;border:1px dashed #000;height:30px;vertical-align:middle;width:229px}
@@ -363,7 +377,7 @@ table.services tr:hover td{color:#fff;background-color:#39c}
 table.services tr:hover img{top:0}
 .img-margin img{margin-top:7px}
 .services-title{font-size:18px;color:#3399CB;margin:21px 0 22px}
-table.services{font-size:10px;float:left}
+table.services{font-size:11px;float:left}
 .services tr{height:30px}
 .img-filter-wrapper{height:23px;overflow:hidden}
 .img-filter-wrapper img{top:-23px;position:relative}
@@ -431,14 +445,14 @@ ul.user-feedback-list p{font-size:16px}
 .deals-block tr:last-child td{font-size:12px}
 }
 @media (max-width: 360px) {
-.side.phonesList a{font-size:13px;line-height:16px}
+.side.phonesList a{font-size:12px;line-height:16px}
 li.filter-item.driving-car .filter-swither-item{padding:12px 2px}
 li.filter-item.currency-filter .filter-swither-item{padding:12px 5px}
 li.filter-item.driving-car .filter-switcher li{font-size:12px}
 ul.user-feedback-list p{font-size:14px}
 .deals-block tr:last-child td{font-size:12px}
 .set-rating-wrapper p{font-size:16px}
-.phonesList span{font-size:9px}
+.phonesList span{font-size:12px}
 }
 .mobile-visible{display:none}
 .fixed-menu-under-block{margin-bottom:150px}

@@ -68,33 +68,49 @@
     </header>
 
     <div class="settings-block">
-    <div class="wrapper">
-        <p class="settigs-title">Показывать информацию</p>
-        <ul class="filters-block">
-            <li class="filter-item car-type-filter">
-                <p class="filter-item-title">Тип такси:</p>
-                <ul class="filter-switcher">
-                    <li class="filter-swither-item _active" title="Легковое"><div class="img-filter-wrapper"><img src="img/filter-car.png"></div></li>
-                    <li class="filter-swither-item" title="Минивэн"><div class="img-filter-wrapper"><img src="img/filter-car-big.png"></div></li>
-                </ul>
-            </li>
-            <li class="filter-item driving-car">
-                <p class="filter-item-title">Тип поездки:</p>
-                <ul class="filter-switcher">
-                    <li class="filter-swither-item _active">город</li>
-                    <li class="filter-swither-item">за городом</li>
-                </ul>
-            </li>
-            <li class="filter-item currency-filter">
-                <p class="filter-item-title">Цены в:</p>
-                <ul class="filter-switcher">
-                    <li class="filter-swither-item">RUB</li>
-                    <li class="filter-swither-item ">EUR</li>
-                    <li class="filter-swither-item _active">USD</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+        <section class="page-section select-section">
+        <div class="content-center">
+            <h2>Выбрать свое такси</h2>
+            <div class="select-section-block price mobile-visible">
+                <p>Цены в:</p>
+                <div class="select-block">
+                    <div class="select-block-item _active">RUB</div>
+                    <div class="select-block-item">EUR</div>
+                    <div class="select-block-item">USD</div>
+                </div>
+            </div>
+            <div class="select-section-block sorting">
+                <p>Сортировать:</p>
+                <div class="select-block">
+                    <div class="select-block-item _active">цена</div>
+                    <div class="select-block-item">рейтинг</div>
+                </div>
+            </div>
+            <div class="select-section-block type-taxi">
+                <p>Тип такси:</p>
+                <div class="select-block _cars">
+                    <div class="select-block-item select-block-item_car _light _active"><div class="select-block-item_popup">Легковое</div></div>
+                    <div class="select-block-item select-block-item_car _medium"><div class="select-block-item_popup"> Минивэн</div></div>
+                    <div class="select-block-item select-block-item_car _truck"><div class="select-block-item_popup"> Грузовое</div></div>
+                </div>
+            </div>
+            <div class="select-section-block type-trip">
+                <p>Тип поездки:</p>
+                <div class="select-block">
+                    <div class="select-block-item _active">город</div>
+                    <div class="select-block-item">за городом</div>
+                </div>
+            </div>
+            <div class="select-section-block price mobile-hidden">
+                <p>Цены в:</p>
+                <div class="select-block">
+                    <div class="select-block-item _active">RUB</div>
+                    <div class="select-block-item">EUR</div>
+                    <div class="select-block-item">USD</div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <div class="main-block">
     <div class="wrapper">
@@ -110,16 +126,16 @@
                 </ul>
                 <div class="clearfix"></div>
                 <div class="call-block">
-                    <a class="call-button"href="tel:152"><img class="phone-block" src="img/phone-icon.png"/>152</a>
+                    <a class="call-button phone-num" data-href="152"><img class="phone-block" src="img/phone-icon.png"/>152</a>
                 </div>                      
             </div>
             <div class="side phonesList">
-                <a class="velc" href="tel:+375296666157"><span>+375 29</span> 6666157</a>
-                <a class="mts" href="tel:+375297777157"><span>+375 29</span> 7777157</a>
-                <a class="life" href="tel:+375259999157"><span>+375 25</span> 9999157</a>
-                <a class="velc" href="tel:+375296666157"><span>+375 29</span> 6666157</a>
-                <a class="mts" href="tel:+375297777157"><span>+375 29</span> 7777157</a>
-                <a class="life" href="tel:+375259999157"><span>+375 25</span> 9999157</a>
+                <a class="velc phone-num" data-href="+375296666157"><span>+375 29</span> 6666157</a>
+                <a class="mts phone-num" data-href="+375297777157"><span>+375 29</span> 7777157</a>
+                <a class="life phone-num" data-href="+375259999157"><span>+375 25</span> 9999157</a>
+                <a class="velc phone-num" data-href="+375296666157"><span>+375 29</span> 6666157</a>
+                <a class="mts phone-num" data-href="+375297777157"><span>+375 29</span> 7777157</a>
+                <a class="life phone-num" data-href="+375259999157"><span>+375 25</span> 9999157</a>
             </div>
             <div class="deals-block">
                 <table class="grid">
@@ -159,7 +175,7 @@
             </tr>
 
             <tr >
-                <td class="services-item " >
+                <td class="services-item two-lines" >
                     <div class="image-wrapper">
                         <img alt="Доставка (продукты, спиртное, лекарство и тд.)"  src="img/2icon.png">
                     </div>
@@ -219,7 +235,7 @@
             </tr>
 
             <tr >
-                <td class="services-item " >
+                <td class="services-item two-lines" >
                     <div class="image-wrapper">
                         <img alt="Обслуживание мероприятий"  src="img/6icon.png">
                     </div>
@@ -231,7 +247,7 @@
             </tr>
 
             <tr >
-                <td class="services-item " >
+                <td class="services-item two-lines" >
                     <div class="image-wrapper">
                         <img alt="Трансфер в аэропорт (легковое/минивен)"  src="img/7icon.png">
                     </div>

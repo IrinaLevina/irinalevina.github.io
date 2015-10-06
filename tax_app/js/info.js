@@ -17,6 +17,18 @@ $(document).ready(function(){
 		displace: false
 	});
 
+	$('.select-block-item_car').hover(function(){
+		$(this).find('.select-block-item_popup').fadeIn();
+	}, function(){
+		$(this).find('.select-block-item_popup').hide();
+	});
+
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$('.phone-num').each(function (k, v) {
+			$(v).attr('href', 'tel:' + $(v).attr('href'));
+		});
+	}
+
 	$(window).touchwipe({
 		wipeLeft: function() {
 			// Close
@@ -33,10 +45,10 @@ $(document).ready(function(){
 			$.sidr('close', 'sidr');
 			
 		},
-		wipeRight: function() {
+		/*wipeRight: function() {
 			// Open
 			$.sidr('open', 'sidr');
-		},
+		},*/
 		preventDefaultEvents: false
 	});
 
@@ -44,19 +56,19 @@ $(document).ready(function(){
 });
 
 var addInfoPageEvents = function () {
-	$('.filter-swither-item').on("click", function () {
-		$(this).parents('.filter-switcher').find('.filter-swither-item').removeClass('_active');
+	$('.select-block-item').on("click", function () {
+		$(this).parents('.select-block').find('.select-block-item').removeClass('_active');
 		$(this).addClass('_active');
 	});
 
 	$(window).on("scroll", function () {
 		if ($('body').width() > 600 ){
-			var $mainBlock = $('.page-header');
+			var $mainBlock = $('.top-info-section');
 			if (!$mainBlock.isOnScreen()) {
-				$('.settings-block').addClass('fixed-section');
+				$('.select-section').addClass('fixed-section');
 				$mainBlock.addClass('fixed-menu-under-block');
 			} else {
-				$('.settings-block').removeClass('fixed-section');
+				$('.select-section').removeClass('fixed-section');
 				$mainBlock.removeClass('fixed-menu-under-block');
 			}
 		}
