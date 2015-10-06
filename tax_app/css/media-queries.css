@@ -74,14 +74,18 @@
     .item-briefly {width: 55%;max-width: 55%;}
     .item-reviews {float: left; padding: 5px 0 0;}
     .item-phones {margin: 0;}
-    .phone-number {font-size: 14px;}
+    .phone-number {font-size: 14px; padding: 8px 0 0;}
 	.info-block h1 {white-space: normal;}
     .item-content-block {float: none;width: 100%;}
     .main-list-item {margin: 0 0 54px;padding: 0 0 17px;}
     .grid {margin: 16px 0;}
-    .grid th, .grid td {padding: 12px 22px; text-align: center; width: 26%; font-size: 10px; text-transform: uppercase;}
+    .grid th, .grid td {padding: 12px 10px; text-align: center; width: 26%; font-size: 10px; text-transform: uppercase;}
+	.grid th {font-size: 12px;}
     .grid th:last-child, .grid td:last-child {width: 39%;}
     .grid-info-txt {float: right;}
+	.phone-number a {font-size: 10px;}
+	.phone-number img {	margin: -2px 0 0;}
+	.phone-number._velcome img { margin: -3px 0 -3px -2px; }
 }
 @media (max-width: 400px){
     .info-block-popular p {font-size: 12px;}

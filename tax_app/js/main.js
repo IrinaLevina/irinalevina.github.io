@@ -17,10 +17,14 @@ $(document).ready(function(){
 		side: 'left',
 		displace: false
 	});
-	$('.select-block-item_car').hover(function(){
-		$(this).find('.select-block-item_popup').fadeIn();
-	}, function(){
-		$(this).find('.select-block-item_popup').hide();
+	$(window).on("load resize", function () {
+		if ($(document).width() > 769 ){
+			$('.select-block-item_car').hover(function(){
+				$(this).find('.select-block-item_popup').fadeIn();
+			}, function(){
+				$(this).find('.select-block-item_popup').hide();
+			});
+		};
 	});
 
 	$(window).touchwipe({
@@ -88,3 +92,9 @@ $.fn.isOnScreen = function(){
     return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
     
 };
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	$('.phone-call').each(function (k, v) {
+		$(v).attr('href', 'tel:' + $(v).data('href'));
+	});
+}
