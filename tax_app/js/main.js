@@ -39,10 +39,10 @@ $(document).ready(function(){
 			$.sidr('close', 'sidr');
 			
 		},
-		wipeRight: function() {
+		/*wipeRight: function() {
 			// Open
 			$.sidr('open', 'sidr');
-		},
+		},*/
 		preventDefaultEvents: false
 	});
 
