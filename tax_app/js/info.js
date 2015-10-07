@@ -82,7 +82,7 @@ var addInfoPageEvents = function () {
  	});
  
  	$(window).on("scroll", function () {
- 		if ($('body').width() > 600 ){
+ 		if ($('body').width() > 769 ){
 			var $mainBlock = $('.page-header');
  			if (!$mainBlock.isOnScreen()) {
 				$('.settings-block').addClass('fixed-section');

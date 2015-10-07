@@ -79,7 +79,7 @@ var addMainPageEvents = function () {
 	});
 
 	$(window).on("scroll", function () {
-		if ($('body').width() > 600 ){
+		if ($('body').width() > 769 ){
 			var $mainBlock = $('.top-info-section');
 			if (!$mainBlock.isOnScreen()) {
 				$('.select-section').addClass('fixed-section');
