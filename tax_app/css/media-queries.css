@@ -94,9 +94,9 @@
     .select-block-item {padding: 19px 5px;}
     .type-taxi .select-block {margin: 0;white-space: nowrap;}
         .type-taxi .select-block-item {width: 90px;}
-    .item-phones {width: 100px;}
+    .item-phones {width: 130px;}
         .short-phone a {padding: 10px 0 7px 30px;}
     .mobile-visible .short-phone a {background: url("../img/phone-icon__h.png") 24px 9px no-repeat #ffd800;}
-    .phone-number {font-size: 10px;}
+    .phone-number {font-size: 13px;}
     .button-more {width: 134px;}
 }
