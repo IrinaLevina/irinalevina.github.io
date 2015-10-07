@@ -42,7 +42,7 @@ $(document).ready(function(){
 	$(window).touchwipe({
 		wipeLeft: function() {
 			// Close
-			closMenu();
+			closeMenu();
 			
 		},
 		wipeUp: function() {
@@ -52,7 +52,7 @@ $(document).ready(function(){
 		},
 		wipeDown: function() {
 			// Close
-			clodeMenu();
+			closeMenu();
 			
 		},
 		/*wipeRight: function() {
