@@ -26,9 +26,9 @@
     <header class="page-header">
         <div class="content-center clearfix">
             <div class="menu-mobile mobile-visible">
-                <a class="menu-mobile-icon" href="#sidr" id="mobile-top-menu-link"><img src="img/menu-mobile-icon.png" /></a>
+                <a class="menu-mobile-icon mobile-menu-open-link" href="#sidr" id="mobile-top-menu-link"><img src="img/menu-mobile-icon.png" /></a>
                 <div class="mobile-menu-wrapper" id="sidr">
-                    <a class="menu-mobile-icon" href="#sidr" id="mobile-top-menu-link-internal"><img src="img/menu-mobile-icon.png" /></a>
+                    <a class="menu-mobile-icon mobile-menu-open-link" href="#sidr" id="mobile-top-menu-link-internal"><img src="img/menu-mobile-icon.png" /></a>
                     <ul class="menu">
                         <li class="menu-item"><a class="_active" href="#">О ПРОЕКТЕ</a></li>
                         <li class="menu-item"><a href="#">РЕКЛАМОДАТЕЛЯМ</a></li>
@@ -41,7 +41,7 @@
                         <a class="social-item _tw" href="#"> </a>
                         <a class="social-item _vk" href="#"> </a>
                     </div>
-                    <a class="menu-mobile-icon" href="#sidr" id="mobile-bottom-menu-link-internal"><img src="img/menu-mobile-icon.png" /></a>
+                    <a class="menu-mobile-icon mobile-menu-open-link" href="#sidr" id="mobile-bottom-menu-link-internal"><img src="img/menu-mobile-icon.png" /></a>
                 </div>
             </div>
             <div class="header-block language-block">
@@ -68,49 +68,33 @@
     </header>
 
     <div class="settings-block">
-        <section class="page-section select-section">
-        <div class="content-center">
-            <h2>Выбрать свое такси</h2>
-            <div class="select-section-block price mobile-visible">
-                <p>Цены в:</p>
-                <div class="select-block">
-                    <div class="select-block-item _active">RUB</div>
-                    <div class="select-block-item">EUR</div>
-                    <div class="select-block-item">USD</div>
-                </div>
-            </div>
-            <div class="select-section-block sorting">
-                <p>Сортировать:</p>
-                <div class="select-block">
-                    <div class="select-block-item _active">цена</div>
-                    <div class="select-block-item">рейтинг</div>
-                </div>
-            </div>
-            <div class="select-section-block type-taxi">
-                <p>Тип такси:</p>
-                <div class="select-block _cars">
-                    <div class="select-block-item select-block-item_car _light _active"><div class="select-block-item_popup">Легковое</div></div>
-                    <div class="select-block-item select-block-item_car _medium"><div class="select-block-item_popup"> Минивэн</div></div>
-                    <div class="select-block-item select-block-item_car _truck"><div class="select-block-item_popup"> Грузовое</div></div>
-                </div>
-            </div>
-            <div class="select-section-block type-trip">
-                <p>Тип поездки:</p>
-                <div class="select-block">
-                    <div class="select-block-item _active">город</div>
-                    <div class="select-block-item">за городом</div>
-                </div>
-            </div>
-            <div class="select-section-block price mobile-hidden">
-                <p>Цены в:</p>
-                <div class="select-block">
-                    <div class="select-block-item _active">RUB</div>
-                    <div class="select-block-item">EUR</div>
-                    <div class="select-block-item">USD</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="wrapper">
+        <p class="settigs-title">Показывать информацию</p>
+        <ul class="filters-block">
+            <li class="filter-item car-type-filter">
+                <p class="filter-item-title">Тип такси:</p>
+                <ul class="filter-switcher">
+                    <li class="filter-swither-item _active"><div class="select-block-item_popup"> Легковое</div><div class="img-filter-wrapper"><img src="img/filter-car.png"></div></li>
+                    <li class="filter-swither-item" ><div class="select-block-item_popup"> Минивэн</div><div class="img-filter-wrapper"><img src="img/filter-car-big.png"></div></li>
+                </ul>
+            </li>
+            <li class="filter-item driving-car">
+                <p class="filter-item-title">Тип поездки:</p>
+                <ul class="filter-switcher">
+                    <li class="filter-swither-item _active">город</li>
+                    <li class="filter-swither-item">за городом</li>
+                </ul>
+            </li>
+            <li class="filter-item currency-filter">
+                <p class="filter-item-title">Цены в:</p>
+                <ul class="filter-switcher">
+                    <li class="filter-swither-item">RUB</li>
+                    <li class="filter-swither-item ">EUR</li>
+                    <li class="filter-swither-item _active">USD</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>
 <div class="main-block">
     <div class="wrapper">
@@ -358,7 +342,7 @@
     <footer class="page-footer">
         <div class="content-center clearfix">
             <div class="menu-mobile mobile-visible">
-                <a class="menu-mobile-icon" href="#sidr" id="mobile-bottom-menu-link"><img src="img/menu-mobile-icon_footer.png" /></a>
+                <a class="menu-mobile-icon mobile-menu-open-link" href="#sidr" id="mobile-bottom-menu-link"><img src="img/menu-mobile-icon_footer.png" /></a>
             </div>
             <div class="social-block">
                 <a class="social-item _fb" href="#"> </a>

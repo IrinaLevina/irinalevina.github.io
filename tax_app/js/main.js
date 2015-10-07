@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#anotherCity').select2();
 	$('#anotherCityTop').select2();
-	$('#mobile-top-menu-link').sidr({
+	/*$('#mobile-top-menu-link').sidr({
 		side: 'left',
 		displace: false
 	});
@@ -16,31 +16,43 @@ $(document).ready(function(){
 	$('#mobile-bottom-menu-link-internal').sidr({
 		side: 'left',
 		displace: false
+	});*/
+
+	$('.mobile-menu-open-link').on("click", function () {
+		
+		if ($( ".mobile-menu-wrapper" ).hasClass("_opened")){
+			$( ".mobile-menu-wrapper" ).animate({left: "-50%"}, 500);
+			$( ".mobile-menu-wrapper" ).removeClass('_opened');
+		} else {
+			$( ".mobile-menu-wrapper" ).animate({ left: "0"});
+			$( ".mobile-menu-wrapper" ).addClass('_opened');
+		}
 	});
+
 	$(window).on("load resize", function () {
 		if ($(document).width() > 769 ){
-			$('.select-block-item_car').hover(function(){
+			/*$('.select-block-item_car').hover(function(){
 				$(this).find('.select-block-item_popup').fadeIn();
 			}, function(){
 				$(this).find('.select-block-item_popup').hide();
-			});
+			});*/
 		};
 	});
 
 	$(window).touchwipe({
 		wipeLeft: function() {
 			// Close
-			$.sidr('close', 'sidr');
+			closMenu();
 			
 		},
 		wipeUp: function() {
 			// Close
-			$.sidr('close', 'sidr');
+			closeMenu();
 			
 		},
 		wipeDown: function() {
 			// Close
-			$.sidr('close', 'sidr');
+			clodeMenu();
 			
 		},
 		/*wipeRight: function() {
@@ -52,6 +64,13 @@ $(document).ready(function(){
 
 	addMainPageEvents();
 });
+
+var closeMenu = function () {
+	if ($( ".mobile-menu-wrapper" ).hasClass("_opened")){
+		$( ".mobile-menu-wrapper" ).animate({left: "-50%"}, 500);
+		$( ".mobile-menu-wrapper" ).removeClass('_opened');
+	} 
+}
 
 var addMainPageEvents = function () {
 	$('.select-block-item').on("click", function () {
