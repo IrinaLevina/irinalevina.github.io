@@ -681,3 +681,11 @@ a.online-call-link:hover{text-decoration:none;color:#fff}
     -webkit-user-select: none;
     user-select: none;
 }
+.mobile-menu-open-link img {
+    padding: 7px;
+}
+
+.mobile-menu-open-link {
+    display: inline-block;
+    margin: -7px 0 0 -7px;
+}
