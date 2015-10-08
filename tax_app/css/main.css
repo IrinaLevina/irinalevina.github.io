@@ -305,8 +305,8 @@ table{border-collapse:collapse;border-spacing:0}
 ul.filter-switcher{margin-top:9px}
 .filter-swither-item._active{color:#000;border-color:#FFD700;background-color:#FFD700}
 .filter-swither-item._active img{top:-0}
-.filter-swither-item:hover{color:#000;border-color:#FFD700;background-color:#FFD700; }
-.filter-swither-item:hover img{top:-0}
+/*.filter-swither-item:hover{color:#000;border-color:#FFD700;background-color:#FFD700; }
+.filter-swither-item:hover img{top:-0}*/
 .filter-swither-item.no-border-right{border-right:0}
 .filter-swither-item.no-border-left{border-left:0}
 .filter-item.car-type-filter .filter-swither-item{padding:8px 25px}
@@ -641,8 +641,8 @@ a.online-call-link:hover{text-decoration:none;color:#fff}
     left: -50%;
     display: block;
 }
-
-.filter-swither-item:hover{color:#000;border-color:#FFD700;background-color:#FFD700; cursor: default;}
+/*
+.filter-swither-item:hover{color:#000;border-color:#FFD700;background-color:#FFD700; cursor: default;}*/
 
 .mobile-menu-wrapper li.menu-item {
     text-align: left;
