@@ -384,7 +384,7 @@ li.filter-item.car-type-filter .filter-swither-item{padding:8px}
 .settings-block{padding:30px 10px}
 .info-page .grid th,.info-page .grid td{padding:21px 0;width:33%;font-size:10px}
 div#rating_1{width:160px}
-.deals-block {width: 375px; }
+.deals-block {width: 55%; }
 .info-page table.grid{width:100%}
 .main-block{padding:0 10px}
 table.services trtd:first-child{border-right:0}
@@ -472,14 +472,18 @@ ul.user-feedback-list p{font-size:16px}
 }
 
 @media (max-width: 360px) {
-.side.phonesList a{font-size:12px;line-height:19px}
+.side.phonesList a{font-size:15px;line-height:19px}
 li.filter-item.driving-car .filter-swither-item{padding:12px 2px}
 li.filter-item.currency-filter .filter-swither-item{padding:12px 5px}
 li.filter-item.driving-car .filter-switcher li{font-size:12px}
 ul.user-feedback-list p{font-size:14px}
 .deals-block tr:last-child td{font-size:12px}
 .set-rating-wrapper p{font-size:16px}
-.phonesList span{font-size:12px}
+.phonesList span{font-size:15px}
+}
+@media (max-width: 330px) {
+	.phonesList span{font-size:12px}
+	.side.phonesList a{font-size:12px;line-height:19px}
 }
 .mobile-visible{display:none}
 .fixed-menu-under-block{margin-bottom:150px}
