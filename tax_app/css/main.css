@@ -469,6 +469,7 @@ ul.user-feedback-list p{font-size:16px}
 	.rating-wrapper {
 	    width: 15%;
 	}
+	
 }
 
 @media (max-width: 360px) {
@@ -480,6 +481,10 @@ ul.user-feedback-list p{font-size:14px}
 .deals-block tr:last-child td{font-size:12px}
 .set-rating-wrapper p{font-size:16px}
 .phonesList span{font-size:15px}
+div.phone-number a {font-size: 14px; }
+.item-content-block .left-block {width: 140px;}
+.item-content-block .rating-list-item {width: 24px;height: 24px;background-size: cover;}
+.main-list-item h2 a {font-weight: 600;}
 }
 @media (max-width: 330px) {
 	.phonesList span{font-size:12px}
@@ -688,4 +693,25 @@ a.online-call-link:hover{text-decoration:none;color:#fff}
 .mobile-menu-open-link {
     display: inline-block;
     margin: -7px 0 0 -7px;
+}
+
+@media (max-width: 480px) {
+	table.grid th:last-child, table.grid td:last-child {
+		width: 30%;
+	}
+	table.grid th, table.grid td {
+		width: 29%;
+	}
+	div.phone-number a {
+	    font-size: 15px;
+	}
+}
+
+@media (max-width: 769px) {
+	table.grid th:last-child, table.grid td:last-child {
+		width: 15%;
+	}
+	table.grid th, table.grid td {
+		width: 15%;
+	}
 }
