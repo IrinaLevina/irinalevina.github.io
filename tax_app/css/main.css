@@ -32,9 +32,9 @@ table{border-collapse:collapse;border-spacing:0}
 .filter-swither-item:last-child{border-right:2px solid #fff;border-left:2px solid #fff}
 ul.filter-switcher{margin-top:9px}
 .filter-swither-item._active{color:#000;border-color:#FFD700;background-color:#FFD700}
-.filter-swither-item._active img{top:-0}
+.filter-swither-item._active img{top:-0}/*
 .filter-swither-item:hover{color:#000;border-color:#FFD700;background-color:#FFD700}
-.filter-swither-item:hover img{top:-0}
+.filter-swither-item:hover img{top:0}*/
 .filter-swither-item.no-border-right{border-right:0}
 .filter-swither-item.no-border-left{border-left:0}
 .filter-item.car-type-filter .filter-swither-item{padding:8px 25px;position: relative;}
@@ -102,49 +102,12 @@ p.feedback-data{float:left}
 p.feedback-user-text{display:block;margin-top:30px}
 .services-text-block-mobile{display:none}
 p.service-mobile-title{font-size:18px;color:#797979;margin:10px 0}
-@media (max-width: 960px) {
-.wrapper{width:100%;margin:auto}
-.settings-block{width:100%;height:300px;background:url(../img/mobile-bg.jpg) no-repeat 100%;background-size:cover;padding:30px 10px;box-sizing:border-box}
-li.filter-item.currency-filter{float:right;width:49%;margin-top:-87px}
-li.filter-item{width:51%}
-li.filter-item.car-type-filter .filter-swither-item{padding:8px}
-.settings-block{padding:30px 10px}
-.info-page .grid th,.info-page .grid td{padding:21px 0;width:33%;font-size:10px}
-div#rating_1{width:160px}
-.deals-block{width:100%}
-.info-page table.grid{width:100%}
-.main-block{padding:0 10px}
-table.services trtd:first-child{border-right:0}
-table.services trtd:last-child{border-left:0}
-td.services-item{border-right:0;padding:0 0 0 5px;vertical-align:middle;width:62%}
-td.info-servise{border-left:0;width:35%;padding-left:10px}
-table.services td{border-color:#39c;line-height:15px}
-.text-wrapper{line-height:14px;margin-left:5px;max-width:67%}
-.image-wrapper{width:55px}
-.services-text-block{display:none}
-ul.social-share-list{width:100%;display:inline-block}
-li.social-share-item{width:33%}
-li.social-share-item img{width:95%}
-li.social-share-item.twitter-share img{width:83%;padding-left:8px}
-p.set-rating-title{clear:both;width:100%}
-.rateBlock{border-bottom:0}
-p.feedback-title{margin-top:20px;font-size:18px}
-li.social-login-item{width:33%;margin:0}
-li.social-login-item img{width:96%}
-p.users-feedback-title{color:#797979}
-.user-feedback-content{width:100%;float:right}
-.avatar-wrapper{margin:0 15px 15px 0}
-p.feedback-data{margin-bottom:10px}
-.services-text-block-mobile{display:block}
-li.filter-item.driving-car .filter-swither-item{padding:12px 5px}
-ul.user-feedback-list p{font-size:16px}
-.set-rating-wrapper p{font-size:16px}
-.deals-block tr:last-child td{font-size:12px}
-}
+
+
 @media (max-width: 600px) {
 	.services-item  .text-wrapper { line-height: 30px }
-	.services-item.two-lines .text-wrapper{ line-height: 14px; }
-	.filter-swither-item:hover{color:#fff;border-color:#fff;background-color:none;}
+	.services-item.two-lines .text-wrapper{ line-height: 14px; }/*
+	.filter-swither-item:hover{color:#fff;border-color:#fff;background-color:none;}*/
 }
 @media (max-width: 360px) {
 .side.phonesList a{font-size:13px;line-height:16px}
@@ -414,6 +377,46 @@ p.feedback-user-text{display:block;margin-top:30px}
 p.service-mobile-title{font-size:18px;color:#797979;margin:10px 0}
 @media (max-width: 960px) {
 .wrapper{width:100%;margin:auto}
+.settings-block{width:100%;height:170px;background:url(../img/mobile-bg.jpg) no-repeat 100%;background-size:cover;padding:30px 10px;box-sizing:border-box}
+/*li.filter-item.currency-filter{float:right;width:49%;margin-top:-87px}*/
+/*li.filter-item{width:51%}*/
+li.filter-item.car-type-filter .filter-swither-item{padding:8px}
+.settings-block{padding:30px 10px}
+.info-page .grid th,.info-page .grid td{padding:21px 0;width:33%;font-size:10px}
+div#rating_1{width:160px}
+.deals-block {width: 375px; }
+.info-page table.grid{width:100%}
+.main-block{padding:0 10px}
+table.services trtd:first-child{border-right:0}
+table.services trtd:last-child{border-left:0}
+td.services-item{border-right:0;padding:0 0 0 5px;vertical-align:middle;width:62%}
+td.info-servise{border-left:0;width:35%;padding-left:10px}
+table.services td{border-color:#39c;line-height:15px}
+.text-wrapper{line-height:30px;margin-left:5px;max-width:67%}
+.tab-two-lines .text-wrapper { line-height: 14px; }
+.image-wrapper{width:55px}
+.services-text-block{display:none}
+ul.social-share-list{width:100%;display:inline-block}
+li.social-share-item{width:33%}
+li.social-share-item img{width:95%}
+li.social-share-item.twitter-share img{width:83%;padding-left:8px}
+p.set-rating-title{clear:both;width:100%}
+.rateBlock{border-bottom:0}
+p.feedback-title{margin-top:20px;font-size:18px}
+li.social-login-item{width:33%;margin:0}
+li.social-login-item img{width:96%}
+p.users-feedback-title{color:#797979}
+.user-feedback-content{width:100%;float:right}
+.avatar-wrapper{margin:0 15px 15px 0}
+p.feedback-data{margin-bottom:10px}
+.services-text-block-mobile{display:block}
+li.filter-item.driving-car .filter-swither-item{padding:12px 5px}
+ul.user-feedback-list p{font-size:16px}
+.set-rating-wrapper p{font-size:16px}
+.deals-block tr:last-child td{font-size:12px}
+}
+@media (max-width: 750px) {
+.wrapper{width:100%;margin:auto}
 .settings-block{width:100%;height:300px;background:url(../img/mobile-bg.jpg) no-repeat 100%;background-size:cover;padding:30px 10px;box-sizing:border-box}
 li.filter-item.currency-filter{float:right;width:49%;margin-top:-87px}
 li.filter-item{width:51%}
@@ -421,7 +424,7 @@ li.filter-item.car-type-filter .filter-swither-item{padding:8px}
 .settings-block{padding:30px 10px}
 .info-page .grid th,.info-page .grid td{padding:21px 0;width:33%;font-size:10px}
 div#rating_1{width:160px}
-.deals-block{width:100%}
+.deals-block{width:70%}
 .info-page table.grid{width:100%}
 .main-block{padding:0 10px}
 table.services trtd:first-child{border-right:0}
@@ -450,6 +453,12 @@ li.filter-item.driving-car .filter-swither-item{padding:12px 5px}
 ul.user-feedback-list p{font-size:16px}
 .set-rating-wrapper p{font-size:16px}
 .deals-block tr:last-child td{font-size:12px}
+}
+@media (max-width: 600px) {
+	.deals-block {width: 350px; }
+}
+@media (max-width: 544px) {
+	.deals-block {width: 100%; }
 }
 @media (max-width: 360px) {
 .side.phonesList a{font-size:12px;line-height:19px}
