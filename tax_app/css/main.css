@@ -102,7 +102,7 @@ p.feedback-data{float:left}
 p.feedback-user-text{display:block;margin-top:30px}
 .services-text-block-mobile{display:none}
 p.service-mobile-title{font-size:18px;color:#797979;margin:10px 0}
-
+.mobile-radio-brake { display: none; }
 
 @media (max-width: 600px) {
 	.services-item  .text-wrapper { line-height: 30px }
@@ -328,9 +328,9 @@ p.main-title{color:#3399CB;font-size:23px;margin-top:40px;letter-spacing:.7px;fo
 .last-update{font-size:13px;display:inline-block;width:100%;text-align:right;box-sizing:border-box;padding:2px 5px 0 0}
 .last-update-span{color:#3399CB}
 .phonesList{margin-top:12px;letter-spacing:0}
-.phonesList a{font-size:18px;font-weight:600;margin:8px 0 8px 8px;padding-left:22px;display:block}
+.phonesList a{font-size:18px;font-weight:600;margin:8px 0 8px 8px;padding-left:22px;display:block; cursor: default;}
 .phonesList a:hover{color:#000}
-.phonesList span{color:#a4a4a4;font-weight:400}
+.phonesList span{color:#a4a4a4;font-weight:400;cursor: default;}
 a.velc{background:url(../img/velcom.png) no-repeat}
 a.mts{background:url(../img/mts.png) no-repeat}
 a.life{background:url(../img/life.png) no-repeat}
@@ -459,7 +459,18 @@ ul.user-feedback-list p{font-size:16px}
 }
 @media (max-width: 544px) {
 	.deals-block {width: 100%; }
+	.mobile-rating-sep {
+	    display: block;
+	    width: 100%;
+	    /* height: 3px; */
+	    float: left;
+	}
+
+	.rating-wrapper {
+	    width: 15%;
+	}
 }
+
 @media (max-width: 360px) {
 .side.phonesList a{font-size:12px;line-height:19px}
 li.filter-item.driving-car .filter-swither-item{padding:12px 2px}
