@@ -69,7 +69,6 @@ $(document).ready(function(){
 		preventDefaultEvents: false
 	});
 
-	addInfoPageEvents();
 });
 
 var closeMenu = function () {
