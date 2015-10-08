@@ -666,3 +666,8 @@ a.online-call-link:hover{text-decoration:none;color:#fff}
     border: none;
 }
 }
+
+.info-page .select-block-item_popup {
+    display: block;
+    width: 75px;
+}
