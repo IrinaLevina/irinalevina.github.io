@@ -602,7 +602,8 @@ a:hover{text-decoration:none;color:#39c}
 .short-phone a:hover,.mobile-visible .short-phone a{color:#000;background:url(../img/phone-icon__h.png) 40px 9px no-repeat #ffd800}
 .phone-number{margin:0 0 3px;width:100%;font-size:15px;display:inline-block;text-align:right}
 .phone-number img{margin:2px 0 0;float:left}
-.phone-number a{font-size:15px;display:inline-block;color:#000;text-decoration:none}
+.phone-number a{font-size:15px;display:inline-block;color:#000;text-decoration:none; cursor: default;}
+.phone-number span { cursor: default; }
 .phone-number a:visited,.phone-number a:focus,.phone-number a:active,.phone-number a:hover{color:#000;text-decoration:none}
 .item-info{float:right}
 table{max-width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0;font-family:"Open Sans",Arial,Helvetica,sans-serif}
