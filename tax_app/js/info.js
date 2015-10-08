@@ -1,24 +1,29 @@
 $(document).ready(function(){
+	var $event = "click";
+	if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+		$event = "touchstart";
+	}
 	
-/*	$('#mobile-top-menu-link').sidr({
-		side: 'left',
-		displace: false
+	$('.filter-swither-item').on($event, function () {
+		$(this).parents('.filter-switcher').find('.filter-swither-item').removeClass('_active');
+ 		/*$(this).addClass('_active');*/
+ 	});
+ 
+ 	$(window).on("scroll", function () {
+ 		if ($('body').width() > 769 ){
+			var $mainBlock = $('.page-header');
+ 			if (!$mainBlock.isOnScreen()) {
+				$('.settings-block').addClass('fixed-section');
+ 				$mainBlock.addClass('fixed-menu-under-block');
+ 			} else {
+				$('.settings-block').removeClass('fixed-section');
+ 				$mainBlock.removeClass('fixed-menu-under-block');
+ 			}
+ 		}
 	});
-	$('#mobile-bottom-menu-link').sidr({
-		side: 'left',
-		displace: false
-	});
-	$('#mobile-top-menu-link-internal').sidr({
-		side: 'left',
-		displace: false
-	});
-	$('#mobile-bottom-menu-link-internal').sidr({
-		side: 'left',
-		displace: false
-	});*/
 		
 
-	$('.mobile-menu-open-link').on("click", function () {
+	$('.mobile-menu-open-link').on($event, function () {
 
 		if ($( ".mobile-menu-wrapper" ).hasClass("_opened")){
 			$( ".mobile-menu-wrapper" ).animate({left: "-50%"}, 500);
@@ -73,28 +78,6 @@ var closeMenu = function () {
 		$( ".mobile-menu-wrapper" ).removeClass('_opened');
 	} 
 }
-
-var addInfoPageEvents = function () {
-	
-	$('.filter-swither-item').on("click", function () {
-		$(this).parents('.filter-switcher').find('.filter-swither-item').removeClass('_active');
- 		/*$(this).addClass('_active');*/
- 	});
- 
- 	$(window).on("scroll", function () {
- 		if ($('body').width() > 769 ){
-			var $mainBlock = $('.page-header');
- 			if (!$mainBlock.isOnScreen()) {
-				$('.settings-block').addClass('fixed-section');
- 				$mainBlock.addClass('fixed-menu-under-block');
- 			} else {
-				$('.settings-block').removeClass('fixed-section');
- 				$mainBlock.removeClass('fixed-menu-under-block');
- 			}
- 		}
-	});
-}
-
 
 
 $.fn.isOnScreen = function(){
