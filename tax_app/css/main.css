@@ -484,7 +484,8 @@ ul.user-feedback-list p{font-size:14px}
 div.phone-number a {font-size: 14px; }
 .item-content-block .left-block {width: 140px;}
 .item-content-block .rating-list-item {width: 24px;height: 24px;background-size: cover;}
-.main-list-item h2 a {font-weight: 600;}
+div.main-list-item h2 a {font-weight: 600; font-size: 22px;}
+
 }
 @media (max-width: 330px) {
 	.phonesList span{font-size:12px}
