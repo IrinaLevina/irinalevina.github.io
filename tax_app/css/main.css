@@ -674,3 +674,10 @@ a.online-call-link:hover{text-decoration:none;color:#fff}
 .info-page .select-block-item_popup {
     width: 75px;
 }
+.filter-swither-item {
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
