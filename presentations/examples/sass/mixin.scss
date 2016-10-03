@@ -1,9 +1,0 @@
-@mixin super-border($color, $width) {
-  border: {
-    color: $color;
-    width: $width;
-    style: dashed;
-  }
-}
-
-p { @include super-border(blue, 1in); }
