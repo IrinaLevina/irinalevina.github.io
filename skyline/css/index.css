@@ -53,6 +53,11 @@ table {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.title {
+    font-size: 30px;
+    padding: 10px 0 25px;
+}
+
 /*============================ - TOP BLOCK - =================================*/
 header {
     text-align: center;
@@ -65,7 +70,7 @@ header {
 .header-menu__item {
     padding: 10px;
     text-transform: uppercase;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .header-menu__item:hover {
@@ -73,7 +78,7 @@ header {
 }
 
 .top-block {
-    height: 600px;
+    height: 95vh;
     background: url('../img/bg-1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -86,7 +91,7 @@ header {
 /*============================ - DANCE TYPES - =================================*/
 .dance-types {
     background: url('../img/bl-tecsture-2.jpg');
-    min-height: 400px;
+    min-height: 340px;
     color: #fff;
     background-size: 25%;
     padding: 40px 30px;
@@ -94,8 +99,77 @@ header {
 }
 
 li.types-list__item {
-    width: 30%;
+    width: 20%;
     float: left;
-    margin: 115px 0 20px;
+    margin: 25px 0 20px;
+}
+
+.types-list.second-line .types-list__item {
+    width: 50%;
+}
+
+
+.types-list__item span {
+    width: 100%;
+    display: block;
+    margin: 10px 0 0;
+    font-size: 20px
+}
+
+.types-list__item__icon:hover {
+    opacity: 1;
+    filter: none;
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    width: 170px;
+    height: 170px;
+    margin-bottom: 0;
+}
+
+.types-list__item__icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: 0.3s;
+    cursor: pointer;
+    /*filter: url(data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter i…0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale);
+    */filter: gray;
+    margin-bottom: 20px;
+    -webkit-filter: grayscale(100%);
 }
 /*============================ - DANCE TYPES END- =================================*/
+/*============================ - PICTURE- =================================*/
+section.picture-block {
+    height: 420px;
+    overflow: hidden;
+}
+
+.picture-block-items {
+    width: 25%;
+    max-height: 210px;
+    float: left;
+}
+
+/*============================ - PICTURE END- =================================*/
+/*============================ - TEACHERS- =================================*/
+.teachers-list-wrapper {
+    background: url('../img/bl-tecsture-2.jpg');
+    min-height: 340px;
+    color: #fff;
+    background-size: 25%;
+    padding: 40px 30px;
+    text-align: center;
+}
+.teachers-list__item {
+    width:  25%;
+    float: left;    
+    margin-top: 115px;
+    color: #ccc;
+    transition: .6;
+}
+.teachers-list__item:hover {
+    color: #fff;
+    cursor: pointer;
+}
+/*============================ - TEACHERS END- =================================*/
