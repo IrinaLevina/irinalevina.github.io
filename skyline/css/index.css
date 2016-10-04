@@ -151,9 +151,8 @@ section.picture-block {
     font-size: 77px;
     position: absolute;
     top: 35%;
-    width: 600px;
+    width: 1200px;
     text-align: center;
-    left: 655px;
     z-index: 3;
 }
 .picture-block__overlay {
